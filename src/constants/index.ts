@@ -66,14 +66,14 @@ const navLinks = [
 
 const socialMedias = [
   {
-    icon: githubSocial,
-    description: 'Github',
-    link: 'https://github.com/DanielNeris',
-  },
-  {
     icon: linkedin,
     description: 'Linkedin',
     link: 'https://www.linkedin.com/in/danielneris',
+  },
+  {
+    icon: githubSocial,
+    description: 'Github',
+    link: 'https://github.com/DanielNeris',
   },
 ]
 

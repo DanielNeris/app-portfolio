@@ -34,7 +34,7 @@ const Footer = () => {
             BR Phone: +55 (11) 98892-8000
           </a>
           <a href="tel:+27820683054" className="hover:text-[#915EFF]">
-            SA Phone: +27 (82) 068-3054
+            ZA Phone: +27 (82) 068-3054
           </a>
         </div>
       </div>
