@@ -23,7 +23,8 @@
     "react-toastify": "^10.0.6",
     "react-vertical-timeline-component": "^3.6.0",
     "swiper": "^11.1.15",
-    "three": "^0.149.0"
+    "three": "^0.149.0",
+    "vite-plugin-radar": "^0.9.6"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
