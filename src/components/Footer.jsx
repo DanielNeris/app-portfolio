@@ -30,11 +30,8 @@ const Footer = () => {
               <span>contact@danielneris.com</span>
             </div>
           </a>
-          <a href="tel:+5511988928000" className="hover:text-[#915EFF]">
-            BR Phone: +55 (11) 98892-8000
-          </a>
-          <a href="tel:+27820683054" className="hover:text-[#915EFF]">
-            ZA Phone: +27 (82) 068-3054
+          <a href="tel:+971586193162" className="hover:text-[#915EFF]">
+            Cell Phone: +971 (58) 619-3162
           </a>
         </div>
       </div>

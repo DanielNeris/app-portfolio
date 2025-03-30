@@ -96,13 +96,13 @@ const contact = [
   {
     icon: phone,
     description: 'Phone',
-    link: 'tel:+5511988928000',
+    link: 'tel:+971586193162',
   },
 ]
 
 const graphcInformations = [
   {
-    time: '6',
+    time: '7',
     description: 'Years of <br /> experience',
     sufix: '+',
   },
@@ -245,7 +245,7 @@ const experiences = [
     company_name: 'Amais Terceiro Setor',
     icon: startup,
     iconBg: '#E6DEDD',
-    date: 'Oct 2018 - Jan 2019',
+    date: 'Jan 2018 - Dec 2018',
     points: [
       'Developed new features and maintained existing systems using PHP and JavaScript.',
       'Designed responsive front-end interfaces with HTML5, CSS3, and Bootstrap.',
