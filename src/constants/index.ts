@@ -204,6 +204,19 @@ const technologies = [
 
 const experiences = [
   {
+    title: 'Senior Software Engineer',
+    company_name: 'Nova Information Technology',
+    icon: startup,
+    iconBg: '#E6DEDD',
+    date: 'Mar 2025 – Present',
+    points: [
+      'Developing backend services and RESTful APIs in Node.js for KYC and compliance workflows.',
+      'Integrating identity verification providers and handling secure user data with privacy-focused architecture.',
+      'Supporting SDKs and internal dashboards for partner onboarding and automation.',
+      'Collaborating with cross-functional teams to ensure scalable and modular backend systems.',
+    ],
+  },
+  {
     title: 'Co-Founder | Head of Technology',
     company_name: 'Zuvia',
     icon: startup,
