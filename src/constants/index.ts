@@ -103,36 +103,38 @@ const contact = [
 const graphcInformations = [
   {
     time: '7',
-    description: 'Years of <br /> experience',
+    description: 'Years<br />of experience',
     sufix: '+',
   },
   {
     time: '20',
-    description: 'Projects <br /> completed',
+    description: 'Projects<br />delivered',
+    sufix: '+',
+  },
+  {
+    time: '12',
+    description: 'Technologies <br />mastered',
     sufix: '+',
   },
   {
     time: '5',
-    description: 'Technologies <br /> mastered',
-  },
-  {
-    time: '5',
-    description: 'Technologies <br /> mastered',
+    description: 'dApps<br />launched',
+    sufix: '+',
   },
 ]
 
 const services = [
   {
-    title: 'Full Stack Development',
+    title: 'Smart Contract Development',
+    icon: creator,
+  },
+  {
+    title: 'Full Stack Web Applications',
     icon: web,
   },
   {
-    title: 'AI Projects & Solutions',
+    title: 'Decentralized Apps (dApps)',
     icon: backend,
-  },
-  {
-    title: 'Decentralized Application (DApp)',
-    icon: creator,
   },
   {
     title: 'Mobile App Development',
@@ -142,28 +144,28 @@ const services = [
 
 const technologies = [
   {
-    name: 'Node.js',
-    icon: nodejs,
+    name: 'Solidity',
+    icon: solidity,
   },
   {
-    name: 'ReactJS',
-    icon: reactjs,
+    name: 'Node.js',
+    icon: nodejs,
   },
   {
     name: 'AI',
     icon: ai,
   },
   {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
     name: 'TypeScript',
     icon: typescript,
   },
   {
-    name: 'Solidity',
-    icon: solidity,
+    name: 'JavaScript',
+    icon: javascript,
+  },
+  {
+    name: 'ReactJS',
+    icon: reactjs,
   },
   {
     name: 'Next.js',
@@ -174,12 +176,12 @@ const technologies = [
     icon: nuxtjs,
   },
   {
-    name: 'MongoDB',
-    icon: mongodb,
-  },
-  {
     name: 'Vue.js',
     icon: vuejs,
+  },
+  {
+    name: 'MongoDB',
+    icon: mongodb,
   },
   {
     name: 'figma',
@@ -206,25 +208,26 @@ const experiences = [
     company_name: 'Zuvia',
     icon: startup,
     iconBg: '#383E56',
-    date: 'Sep 2022 - Present',
+    date: 'Sep 2022 – Present',
     points: [
-      'Joined Zuvia from its inception, contributing to all aspects of IT infrastructure and product development.',
-      'Scaled operations, supporting 2,000 accounts and tokenizing R$25 million in digital assets.',
-      'Designed scalable microservices with Node.js and MongoDB, integrated payment solutions, and optimized CI/CD pipelines on Azure.',
-      'Managed front-end development using React.js and Vue.js, delivering dynamic and user-friendly experiences.',
+      'Co-founded Zuvia and led the development of the company’s tokenization infrastructure from the ground up.',
+      'Tokenized over R$30 million in real estate assets and scaled the platform to support 3,000+ users.',
+      'Designed distributed microservices using Node.js and MongoDB, and integrated secure payment flows.',
+      'Implemented CI/CD pipelines with GitHub Actions and Azure, improving deployment speed by over 60%.',
+      'Oversaw frontend development with React.js and Vue.js, delivering performant, user-centered interfaces.',
     ],
   },
   {
-    title: 'Co-Founder | Head of Technology',
+    title: 'Co-Founder | Head of Web3',
     company_name: 'SkyDan',
     icon: startup,
     iconBg: '#E6DEDD',
-    date: 'Sep 2021 - Aug 2024',
+    date: 'Sep 2021 – Aug 2022',
     points: [
-      'Spearheaded the company’s Web3 and blockchain initiatives, aligning technology strategies with business objectives.',
-      'Developed and deployed decentralized applications (DApps) and smart contracts using Solidity.',
-      'Designed APIs with REST and GraphQL and implemented Node.js back-end solutions adhering to SOLID principles.',
-      'Explored and implemented metaverse technologies to create immersive digital experiences.',
+      'Led Web3 strategy and blockchain product development, aligning technical architecture with business goals.',
+      'Designed and deployed smart contracts using Solidity, including on-chain logic for betting and reward systems.',
+      'Built full-stack dApps using Node.js (REST/GraphQL) and React, following SOLID and clean architecture principles.',
+      'Explored metaverse integration, focusing on immersive gamified experiences within decentralized platforms.',
     ],
   },
   {
@@ -232,25 +235,25 @@ const experiences = [
     company_name: 'Live On Solutions',
     icon: startup,
     iconBg: '#383E56',
-    date: 'Jan 2019 - Oct 2021',
+    date: 'Jan 2019 – Oct 2021',
     points: [
-      'Developed and maintained features for Bank-as-a-Service (BaaS) and Credit-as-a-Service (CaaS) platforms.',
-      'Built secure back-end systems using Node.js with TypeScript, integrating third-party payment providers.',
-      'Created intuitive front-end interfaces with React.js, enhancing user experience.',
-      'Managed data with MongoDB and PostgreSQL, ensuring efficiency and scalability.',
+      'Built and maintained features for white-label BaaS and CaaS platforms, serving fintech clients.',
+      'Developed back-end services in Node.js with TypeScript, and integrated third-party payment APIs.',
+      'Created and maintained responsive UIs with React.js, focused on usability and performance.',
+      'Worked with PostgreSQL and MongoDB, optimizing queries and ensuring scalable data structures.',
     ],
   },
   {
-    title: 'Trainee developer',
+    title: 'Trainee Developer',
     company_name: 'Amais Terceiro Setor',
     icon: startup,
     iconBg: '#E6DEDD',
-    date: 'Jan 2018 - Dec 2018',
+    date: 'Jan 2018 – Dec 2018',
     points: [
-      'Developed new features and maintained existing systems using PHP and JavaScript.',
-      'Designed responsive front-end interfaces with HTML5, CSS3, and Bootstrap.',
-      'Optimized database queries and managed operations using MySQL.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Maintained and developed new features using PHP and vanilla JavaScript.',
+      'Built responsive interfaces using HTML5, CSS3, and Bootstrap for nonprofit admin systems.',
+      'Improved SQL queries and managed MySQL operations for internal tools.',
+      'Collaborated in code reviews and agile delivery with the development team.',
     ],
   },
 ]
@@ -309,20 +312,11 @@ const projects = [
   {
     name: 'Zuvia Digital Assets',
     description:
-      'Web platform for real estate investment, enabling users to tokenize, manage, and diversify their digital assets securely and transparently.',
+      'End-to-end platform for real estate tokenization. Enables users to invest in fractionalized assets, manage their portfolio, and track performance through a secure and transparent Web3 interface.',
     tags: [
-      {
-        name: 'nodejs',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'investiment',
-        color: 'pink-text-gradient',
-      },
+      { name: 'nodejs', color: 'green-text-gradient' },
+      { name: 'nextjs', color: 'blue-text-gradient' },
+      { name: 'tokenization', color: 'pink-text-gradient' },
     ],
     image: zuviadigitalassets,
     source_code_link: 'https://app.zuvia.com.br',
@@ -330,41 +324,23 @@ const projects = [
   {
     name: 'ZuviaPay',
     description:
-      'Web platform enabling users to easily buy cryptocurrencies with secure and seamless transactions, providing a straightforward solution for digital asset purchases.',
+      'Fiat-to-crypto gateway that allows users to easily purchase cryptocurrencies with an intuitive UI and secure transaction flow. Built for simplicity and compliance.',
     tags: [
-      {
-        name: 'nodejs',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'nuxtjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'cryptocurrency',
-        color: 'pink-text-gradient',
-      },
+      { name: 'nodejs', color: 'green-text-gradient' },
+      { name: 'nuxtjs', color: 'blue-text-gradient' },
+      { name: 'crypto-payments', color: 'pink-text-gradient' },
     ],
     image: zuviapay,
     source_code_link: '#',
   },
   {
-    name: 'Fstage',
+    name: 'Fstage Diagnostic',
     description:
-      "A web-based diagnostic tool that helps businesses assess their website's performance, SEO, and user experience, providing actionable insights for improvements.",
+      'AI-driven website diagnostic tool that analyzes performance, SEO, and UX to deliver actionable recommendations for technical and strategic improvement.',
     tags: [
-      {
-        name: 'nodejs',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'ai',
-        color: 'pink-text-gradient',
-      },
+      { name: 'nodejs', color: 'green-text-gradient' },
+      { name: 'nextjs', color: 'blue-text-gradient' },
+      { name: 'ai-insights', color: 'pink-text-gradient' },
     ],
     image: fstage,
     source_code_link: 'https://diagnostico.fstage.com.br',
@@ -372,20 +348,11 @@ const projects = [
   {
     name: 'Smoolos Club DApp',
     description:
-      'A DApp for Smoolos NFT holders that unlocks exclusive club benefits, providing an engaging and rewarding experience.',
+      'Decentralized application for Smoolos NFT holders, unlocking exclusive club features and benefits. Seamlessly integrates Web3 authentication and smart contract interactions.',
     tags: [
-      {
-        name: 'nodejs',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'reactjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'blockchain',
-        color: 'pink-text-gradient',
-      },
+      { name: 'nodejs', color: 'green-text-gradient' },
+      { name: 'reactjs', color: 'blue-text-gradient' },
+      { name: 'web3-auth', color: 'pink-text-gradient' },
     ],
     image: smoolosclubdapp,
     source_code_link: 'https://smoolos-club-dapp.netlify.app',
@@ -393,41 +360,23 @@ const projects = [
   {
     name: 'Smoolos Bet Club',
     description:
-      'A decentralized platform where NFT holders can place bets on ongoing games, offering an exclusive betting experience.',
+      'Web3 betting dApp for NFT holders. Players can place on-chain bets on real-time games in a decentralized and permissionless environment.',
     tags: [
-      {
-        name: 'nodejs',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'reactjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'dapp',
-        color: 'pink-text-gradient',
-      },
+      { name: 'solidity', color: 'green-text-gradient' },
+      { name: 'reactjs', color: 'blue-text-gradient' },
+      { name: 'dapp', color: 'pink-text-gradient' },
     ],
     image: smoolosbetclub,
     source_code_link: 'https://smoolos-bet-club.netlify.app',
   },
   {
-    name: 'Smoolos NFT',
+    name: 'Smoolos NFT Minting',
     description:
-      'A decentralized application for minting Smoolos NFT collection, allowing users to mint and own unique NFTs that unlock exclusive benefits.',
+      'Smart contract-based NFT minting platform for the Smoolos collection. Users can mint, manage, and explore NFTs with integrated Web3 wallet support.',
     tags: [
-      {
-        name: 'nodejs',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'reactjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'nft',
-        color: 'pink-text-gradient',
-      },
+      { name: 'solidity', color: 'green-text-gradient' },
+      { name: 'reactjs', color: 'blue-text-gradient' },
+      { name: 'nft', color: 'pink-text-gradient' },
     ],
     image: smoolosnft,
     source_code_link: 'https://smoolos.netlify.app',
