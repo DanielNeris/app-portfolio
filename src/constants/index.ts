@@ -271,7 +271,7 @@ const experiences = [
     ],
   },
   {
-    title: 'Trainee Developer',
+    title: 'Software Developer',
     company_name: 'Amais Terceiro Setor',
     icon: startup,
     iconBg: '#E6DEDD',
