@@ -207,13 +207,27 @@ const experiences = [
     title: 'Senior Software Engineer',
     company_name: 'Nova Information Technology',
     icon: startup,
-    iconBg: '#E6DEDD',
+    iconBg: '#383E56',
     date: 'Mar 2025 – Present',
     points: [
       'Developing backend services and RESTful APIs in Node.js for KYC and compliance workflows.',
       'Integrating identity verification providers and handling secure user data with privacy-focused architecture.',
       'Supporting SDKs and internal dashboards for partner onboarding and automation.',
       'Collaborating with cross-functional teams to ensure scalable and modular backend systems.',
+    ],
+  },
+  {
+    title: 'Senior Full Stack Engineer',
+    company_name: 'SHSquads',
+    icon: startup,
+    iconBg: '#E6DEDD',
+    date: 'Nov 2024 – Mar 2025',
+    points: [
+      'Led development of cross-platform applications using Node.js, Next.js, and React Native with Expo.',
+      'Built and maintained RESTful APIs and backend services in Node.js with TypeScript.',
+      'Implemented mobile-first UIs using React Native, optimizing performance across Android and iOS.',
+      'Developed web interfaces with Next.js and React, focused on responsive design and user engagement.',
+      'Collaborated in an agile environment with designers, QA, and product managers to deliver business-critical features.',
     ],
   },
   {
