@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
           </a>
           <a href="tel:+971505104408" className="hover:text-[#915EFF]">
-            Cell Phone: +971 (58) 619-3162
+            Cell Phone: +971 (50) 510-4408
           </a>
         </div>
       </div>
