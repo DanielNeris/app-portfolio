@@ -33,7 +33,11 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-white text-[24px] font-bold">
+          <a href={experience.url} target="_blank" rel="noopener noreferrer">
+            {experience.title}
+          </a>
+        </h3>
         <p
           className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
@@ -43,9 +47,9 @@ const ExperienceCard = ({ experience }) => {
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
-        {experience.points.map((point, index) => (
+        {experience.points.map(point => (
           <li
-            key={`experience-point-${index}`}
+            key={point}
             className="text-white-100 text-[14px] pl-1 tracking-wider"
           >
             {point}
@@ -70,11 +74,8 @@ const Experience = () => {
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
+          {experiences.map(experience => (
+            <ExperienceCard key={experience.title} experience={experience} />
           ))}
         </VerticalTimeline>
       </div>
