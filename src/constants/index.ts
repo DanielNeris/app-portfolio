@@ -206,9 +206,10 @@ const experiences = [
   {
     title: 'Senior Software Engineer',
     company_name: 'Nova Information Technology',
+    url: 'https://thenovaweb.com',
     icon: startup,
     iconBg: '#383E56',
-    date: 'Mar 2025 – Present',
+    date: '2025 – Present',
     points: [
       'Developing backend services and RESTful APIs in Node.js for KYC and compliance workflows.',
       'Integrating identity verification providers and handling secure user data with privacy-focused architecture.',
@@ -217,25 +218,12 @@ const experiences = [
     ],
   },
   {
-    title: 'Senior Full Stack Engineer',
-    company_name: 'SHSquads',
+    title: 'Principal Software Engineer | Co-Founder',
+    company_name: 'Zuvia',
+    url: 'https://zuvia.com.br',
     icon: startup,
     iconBg: '#E6DEDD',
-    date: 'Nov 2024 – Mar 2025',
-    points: [
-      'Led development of cross-platform applications using Node.js, Next.js, and React Native with Expo.',
-      'Built and maintained RESTful APIs and backend services in Node.js with TypeScript.',
-      'Implemented mobile-first UIs using React Native, optimizing performance across Android and iOS.',
-      'Developed web interfaces with Next.js and React, focused on responsive design and user engagement.',
-      'Collaborated in an agile environment with designers, QA, and product managers to deliver business-critical features.',
-    ],
-  },
-  {
-    title: 'Co-Founder | Head of Technology',
-    company_name: 'Zuvia',
-    icon: startup,
-    iconBg: '#383E56',
-    date: 'Sep 2022 – Present',
+    date: '2022 – 2025',
     points: [
       'Co-founded Zuvia and led the development of the company’s tokenization infrastructure from the ground up.',
       'Tokenized over R$30 million in real estate assets and scaled the platform to support 3,000+ users.',
@@ -245,11 +233,27 @@ const experiences = [
     ],
   },
   {
-    title: 'Co-Founder | Head of Web3',
+    title: 'Senior Software Engineer',
+    company_name: 'SHSquads',
+    url: 'https://shsquads.com',
+    icon: startup,
+    iconBg: '#383E56',
+    date: '2024 – 2025',
+    points: [
+      'Led development of cross-platform applications using Node.js, Next.js, and React Native with Expo.',
+      'Built and maintained RESTful APIs and backend services in Node.js with TypeScript.',
+      'Implemented mobile-first UIs using React Native, optimizing performance across Android and iOS.',
+      'Developed web interfaces with Next.js and React, focused on responsive design and user engagement.',
+      'Collaborated in an agile environment with designers, QA, and product managers to deliver business-critical features.',
+    ],
+  },
+  {
+    title: 'Lead Software Engineer | Co-Founder ',
     company_name: 'SkyDan',
+    url: '#',
     icon: startup,
     iconBg: '#E6DEDD',
-    date: 'Sep 2021 – Aug 2022',
+    date: '2021 – 2022',
     points: [
       'Led Web3 strategy and blockchain product development, aligning technical architecture with business goals.',
       'Designed and deployed smart contracts using Solidity, including on-chain logic for betting and reward systems.',
@@ -258,11 +262,12 @@ const experiences = [
     ],
   },
   {
-    title: 'Full Stack Developer',
+    title: 'Software Engineer',
     company_name: 'Live On Solutions',
+    url: '#',
     icon: startup,
     iconBg: '#383E56',
-    date: 'Jan 2019 – Oct 2021',
+    date: '2019 – 2021',
     points: [
       'Built and maintained features for white-label BaaS and CaaS platforms, serving fintech clients.',
       'Developed back-end services in Node.js with TypeScript, and integrated third-party payment APIs.',
@@ -273,9 +278,10 @@ const experiences = [
   {
     title: 'Software Developer',
     company_name: 'Amais Terceiro Setor',
+    url: '#',
     icon: startup,
     iconBg: '#E6DEDD',
-    date: 'Jan 2018 – Dec 2018',
+    date: '2018 – 2018',
     points: [
       'Maintained and developed new features using PHP and vanilla JavaScript.',
       'Built responsive interfaces using HTML5, CSS3, and Bootstrap for nonprofit admin systems.',
@@ -287,14 +293,14 @@ const experiences = [
 
 const education = [
   {
+    degree: 'Bachelor in Systems Analysis and Development',
+    institution: 'Descomplica Faculdade Digital, Brazil',
+    graduationYear: '2025',
+  },
+  {
     degree: 'Intensive English Programme',
     institution: 'Stellenbosch University, South Africa',
     graduationYear: '2024',
-  },
-  {
-    degree: 'Bachelor in Computer Science',
-    institution: 'UNISAGRADO, Brazil',
-    graduationYear: '2020',
   },
   {
     degree: 'Web Developer',
