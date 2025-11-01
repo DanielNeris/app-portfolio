@@ -96,7 +96,7 @@ const contact = [
   {
     icon: phone,
     description: 'Phone',
-    link: 'tel:+971505104408',
+    link: 'tel:+971529618933',
   },
 ]
 
