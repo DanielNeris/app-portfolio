@@ -98,24 +98,24 @@ const contact = [
 
 const graphcInformations = [
   {
-    time: '7',
-    description: 'Years<br />of experience',
+    time: 7,
+    description: 'Years<br />in production',
     sufix: '+',
   },
   {
-    time: '20',
-    description: 'Projects<br />delivered',
+    time: 4,
+    description: 'Years<br />in Web3 & decentralization',
     sufix: '+',
   },
   {
-    time: '12',
-    description: 'Technologies <br />mastered',
+    time: 20,
+    description: 'Systems<br />designed',
     sufix: '+',
   },
   {
-    time: '5',
-    description: 'dApps<br />launched',
-    sufix: '+',
+    time: 99,
+    description: '%<br />reliability mindset',
+    sufix: '',
   },
 ]
 
