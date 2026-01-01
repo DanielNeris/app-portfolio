@@ -25,6 +25,9 @@ import nextjs from './tech/nextjs.png'
 import nuxtjs from './tech/nuxtjs.png'
 import vuejs from './tech/vuejs.png'
 import ai from './tech/ai.png'
+import kafka from './tech/kafka.png'
+import aws from './tech/aws.png'
+import postgresql from './tech/postgresql.png'
 
 import zuviadigitalassets from './projects/zuviadigitalassets.png'
 import zuviapay from './projects/zuviapay.png'
@@ -51,7 +54,6 @@ import githubSocial from './social/github.svg'
 import cvPDF from './resume/cv.pdf'
 
 import homeImg from './testimonials/home.jpeg'
-
 
 import testimonial1 from './testimonials/1.jpeg'
 import testimonial2 from './testimonials/2.jpeg'
@@ -105,5 +107,8 @@ export {
   testimonial1,
   testimonial2,
   testimonial3,
-  homeImg
+  homeImg,
+  kafka,
+  aws,
+  postgresql,
 }

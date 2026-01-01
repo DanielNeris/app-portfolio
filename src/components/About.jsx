@@ -47,15 +47,19 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I’m a Full Stack & Blockchain Engineer with 7+ years of experience
-        delivering scalable platforms in fintech, tokenization, and Web3. I
-        specialize in Solidity, and the MERN stack — building smart contract
-        ecosystems and full-stack applications used by thousands. I've led
-        development in real estate tokenization platforms managing R$30M+ in
-        assets and helped launch secure, multisig-enabled investment flows. My
-        work bridges deep backend infrastructure, smart contracts, and
-        product-focused execution. Currently exploring how AI and on-chain
-        finance can shape the next generation of decentralized products.
+        I’m a Senior Software Engineer with 7+ years of experience building and
+        operating production-grade platforms across fintech, tokenization, and
+        Web3 infrastructure. My background is strongly focused on backend and
+        platform architecture, working with Node.js, TypeScript, event-driven
+        systems, and cloud-native deployments. My work sits at the intersection
+        of decentralized systems, P2P architectures, and regulated financial
+        infrastructure. I’ve led the development of tokenized asset platforms,
+        backend services, and on-chain/off-chain integrations, balancing
+        scalability, security, privacy, and compliance requirements in
+        real-world environments. I have hands-on experience owning systems
+        end-to-end, from smart contracts and backend APIs to infrastructure and
+        CI/CD. I enjoy working close to product and business to ensure platforms
+        are resilient, maintainable, and ready to operate at scale.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

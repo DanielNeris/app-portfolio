@@ -45,7 +45,9 @@ const Hero = () => {
         <div>
           <div className="flex items-center">
             <div>
-              <span>Full Stack Developer</span>
+              <span>
+                Senior Software Engineer · Fintech & Decentralized Systems
+              </span>
               <h1
                 className={`${styles.heroHeadText} lg:text-[70px] text-white`}
               >
@@ -54,12 +56,12 @@ const Hero = () => {
               <p
                 className={`${styles.heroSubText} mt-2 lg:text-[20px] text-gray`}
               >
-                I am Passionate about developing innovative solutions,
+                I design and build backend-first, production-grade platforms
               </p>
               <p
                 className={`${styles.heroSubText} mt-2 lg:text-[20px] text-gray`}
               >
-                finance and decentralization.
+                for finance, decentralization, and P2P systems.
               </p>
               <div className="md:flex items-center mt-10 text-center">
                 <button

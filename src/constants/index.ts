@@ -5,26 +5,19 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
   startup,
-  download,
   email,
   phone,
   linkedin,
   githubSocial,
   solidity,
   nextjs,
-  nuxtjs,
   ai,
-  vuejs,
   testimonial1,
   testimonial2,
   testimonial3,
@@ -34,6 +27,9 @@ import {
   smoolosbetclub,
   smoolosclubdapp,
   smoolosnft,
+  kafka,
+  aws,
+  postgresql,
 } from '../assets'
 
 const navLinks = [
@@ -124,82 +120,27 @@ const graphcInformations = [
 ]
 
 const services = [
-  {
-    title: 'Smart Contract Development',
-    icon: creator,
-  },
-  {
-    title: 'Full Stack Web Applications',
-    icon: web,
-  },
-  {
-    title: 'Decentralized Apps (dApps)',
-    icon: backend,
-  },
-  {
-    title: 'Mobile App Development',
-    icon: mobile,
-  },
+  { title: 'Backend & Platform Architecture', icon: backend },
+  { title: 'Event-Driven Systems (Kafka Patterns)', icon: web },
+  { title: 'Fintech, KYC & Compliance APIs', icon: creator },
+  { title: 'Smart Contracts & Tokenization (Solidity)', icon: mobile },
 ]
 
 const technologies = [
-  {
-    name: 'Solidity',
-    icon: solidity,
-  },
-  {
-    name: 'Node.js',
-    icon: nodejs,
-  },
-  {
-    name: 'AI',
-    icon: ai,
-  },
-  {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'ReactJS',
-    icon: reactjs,
-  },
-  {
-    name: 'Next.js',
-    icon: nextjs,
-  },
-  {
-    name: 'Nuxt.js',
-    icon: nuxtjs,
-  },
-  {
-    name: 'Vue.js',
-    icon: vuejs,
-  },
-  {
-    name: 'MongoDB',
-    icon: mongodb,
-  },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
-  },
-  {
-    name: 'React Native',
-    icon: reactjs,
-  },
-
-  {
-    name: 'Tailwind',
-    icon: tailwind,
-  },
+  { name: 'Node.js', icon: nodejs },
+  { name: 'TypeScript', icon: typescript },
+  { name: 'JavaScript', icon: javascript },
+  { name: 'Kafka', icon: kafka }, // ← adiciona (event-driven)
+  { name: 'AWS', icon: aws }, // ← cloud / arquitetura
+  { name: 'Docker', icon: docker },
+  { name: 'MongoDB', icon: mongodb },
+  { name: 'PostgreSQL', icon: postgresql }, // ← se não tiver asset, pode manter sem icon
+  { name: 'React', icon: reactjs },
+  { name: 'Next.js', icon: nextjs },
+  { name: 'RN', icon: reactjs },
+  { name: 'Solidity', icon: solidity },
+  { name: 'AI', icon: ai }, // ← mantém
+  { name: 'Git', icon: git },
 ]
 
 const experiences = [
@@ -211,10 +152,10 @@ const experiences = [
     iconBg: '#383E56',
     date: '2025 – Present',
     points: [
-      'Developing backend services and RESTful APIs in Node.js for KYC and compliance workflows.',
-      'Integrating identity verification providers and handling secure user data with privacy-focused architecture.',
-      'Supporting SDKs and internal dashboards for partner onboarding and automation.',
-      'Collaborating with cross-functional teams to ensure scalable and modular backend systems.',
+      'Designing and building backend services and APIs for regulated KYC and compliance workflows (Node.js/TypeScript).',
+      'Implementing data handling for sensitive information, aligning architecture with compliance constraints.',
+      'Working with event-driven patterns and asynchronous workflows for scalable processing and automation (Kafka patterns).',
+      'Contributing to platform-level decisions: modular boundaries, reliability, observability, and safe deployments.',
     ],
   },
   {
@@ -225,11 +166,11 @@ const experiences = [
     iconBg: '#E6DEDD',
     date: '2022 – 2025',
     points: [
-      'Co-founded Zuvia and led the development of the company’s tokenization infrastructure from the ground up.',
-      'Tokenized over R$30 million in real estate assets and scaled the platform to support 3,000+ users.',
-      'Designed distributed microservices using Node.js and MongoDB, and integrated secure payment flows.',
-      'Implemented CI/CD pipelines with GitHub Actions and Azure, improving deployment speed by over 60%.',
-      'Oversaw frontend development with React.js and Vue.js, delivering performant, user-centered interfaces.',
+      'Co-founded Zuvia and led the architecture and delivery of the tokenization platform (Solidity + Node.js/TypeScript).',
+      'Built on-chain/off-chain integrations and backend services supporting R$200M+ in tokenized assets and 5K+ active users.',
+      'Designed distributed services and data layers (PostgreSQL/MongoDB/Redis) focusing on reliability, idempotency, and traceability.',
+      'Implemented CI/CD pipelines and cloud deployments, improving release cadence and reducing operational friction.',
+      'Owned end-to-end delivery for core financial workflows, ensuring security, scalability, and uptime in production.',
     ],
   },
   {
@@ -240,25 +181,24 @@ const experiences = [
     iconBg: '#383E56',
     date: '2024 – 2025',
     points: [
-      'Led development of cross-platform applications using Node.js, Next.js, and React Native with Expo.',
-      'Built and maintained RESTful APIs and backend services in Node.js with TypeScript.',
-      'Implemented mobile-first UIs using React Native, optimizing performance across Android and iOS.',
-      'Developed web interfaces with Next.js and React, focused on responsive design and user engagement.',
-      'Collaborated in an agile environment with designers, QA, and product managers to deliver business-critical features.',
+      'Delivered backend-driven systems for fintech clients, building APIs and integrations in Node.js/TypeScript.',
+      'Shipped web and mobile features (Next.js, React Native) tightly coupled to backend services and data models.',
+      'Improved performance and reliability through better service boundaries, caching, and async workflows.',
+      'Collaborated with product and QA to deliver business-critical features in iterative releases.',
     ],
   },
   {
-    title: 'Lead Software Engineer | Co-Founder ',
+    title: 'Lead Software Engineer | Co-Founder',
     company_name: 'SkyDan',
     url: '#',
     icon: startup,
     iconBg: '#E6DEDD',
     date: '2021 – 2022',
     points: [
-      'Led Web3 strategy and blockchain product development, aligning technical architecture with business goals.',
-      'Designed and deployed smart contracts using Solidity, including on-chain logic for betting and reward systems.',
-      'Built full-stack dApps using Node.js (REST/GraphQL) and React, following SOLID and clean architecture principles.',
-      'Explored metaverse integration, focusing on immersive gamified experiences within decentralized platforms.',
+      'Led Web3 architecture and delivery across smart contracts (Solidity) and backend services (Node.js).',
+      'Designed tokenization and reward mechanics with security-focused smart contract patterns.',
+      'Built API layers (REST/GraphQL) and supporting dApps to integrate on-chain and off-chain workflows.',
+      'Explored decentralized/P2P flows with an emphasis on ownership, privacy, and system reliability.',
     ],
   },
   {
@@ -269,10 +209,10 @@ const experiences = [
     iconBg: '#383E56',
     date: '2019 – 2021',
     points: [
-      'Built and maintained features for white-label BaaS and CaaS platforms, serving fintech clients.',
-      'Developed back-end services in Node.js with TypeScript, and integrated third-party payment APIs.',
-      'Created and maintained responsive UIs with React.js, focused on usability and performance.',
-      'Worked with PostgreSQL and MongoDB, optimizing queries and ensuring scalable data structures.',
+      'Built backend services for fintech platforms (BaaS/CaaS), integrating payment providers and core financial workflows.',
+      'Designed APIs and data models in Node.js/TypeScript with PostgreSQL and MongoDB.',
+      'Improved performance through query optimization and backend refactoring for scale.',
+      'Collaborated across engineering and business teams to ship production features end-to-end.',
     ],
   },
   {
@@ -295,7 +235,7 @@ const education = [
   {
     degree: 'Bachelor in Systems Analysis and Development',
     institution: 'Descomplica Faculdade Digital, Brazil',
-    graduationYear: '2025',
+    graduationYear: '2026',
   },
   {
     degree: 'Intensive English Programme',
