@@ -121,25 +121,25 @@ const graphcInformations = [
 
 const services = [
   { title: 'Backend & Platform Architecture', icon: backend },
-  { title: 'Event-Driven Systems (Kafka Patterns)', icon: web },
+  { title: 'Event-Driven Systems', icon: web },
   { title: 'Fintech, KYC & Compliance APIs', icon: creator },
-  { title: 'Smart Contracts & Tokenization (Solidity)', icon: mobile },
+  { title: 'Smart Contracts & Tokenization', icon: mobile },
 ]
 
 const technologies = [
   { name: 'Node.js', icon: nodejs },
   { name: 'TypeScript', icon: typescript },
   { name: 'JavaScript', icon: javascript },
-  { name: 'Kafka', icon: kafka }, // ← adiciona (event-driven)
-  { name: 'AWS', icon: aws }, // ← cloud / arquitetura
+  { name: 'Kafka', icon: kafka },
+  { name: 'AWS', icon: aws },
   { name: 'Docker', icon: docker },
   { name: 'MongoDB', icon: mongodb },
-  { name: 'PostgreSQL', icon: postgresql }, // ← se não tiver asset, pode manter sem icon
+  { name: 'PostgreSQL', icon: postgresql },
   { name: 'React', icon: reactjs },
   { name: 'Next.js', icon: nextjs },
   { name: 'RN', icon: reactjs },
   { name: 'Solidity', icon: solidity },
-  { name: 'AI', icon: ai }, // ← mantém
+  { name: 'AI', icon: ai },
   { name: 'Git', icon: git },
 ]
 
@@ -154,7 +154,7 @@ const experiences = [
     points: [
       'Designing and building backend services and APIs for regulated KYC and compliance workflows (Node.js/TypeScript).',
       'Implementing data handling for sensitive information, aligning architecture with compliance constraints.',
-      'Working with event-driven patterns and asynchronous workflows for scalable processing and automation (Kafka patterns).',
+      'Working with event-driven patterns and asynchronous workflows for scalable processing and automation.',
       'Contributing to platform-level decisions: modular boundaries, reliability, observability, and safe deployments.',
     ],
   },
