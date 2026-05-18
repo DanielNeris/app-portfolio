@@ -1,6 +1,9 @@
 'use client'
 
-import { NextIntlClientProvider } from 'next-intl'
+import {
+  NextIntlClientProvider,
+  type AbstractIntlMessages,
+} from 'next-intl'
 import {
   createContext,
   useContext,
@@ -14,14 +17,14 @@ import ptBr from '@/messages/pt-br.json'
 import es from '@/messages/es.json'
 import ar from '@/messages/ar.json'
 
-const messagesByLocale = {
-  en,
-  'pt-br': ptBr,
-  es,
-  ar,
-} as const
+const messagesByLocale: Record<string, AbstractIntlMessages> = {
+  en: en as unknown as AbstractIntlMessages,
+  'pt-br': ptBr as unknown as AbstractIntlMessages,
+  es: es as unknown as AbstractIntlMessages,
+  ar: ar as unknown as AbstractIntlMessages,
+}
 
-export type Locale = keyof typeof messagesByLocale
+export type Locale = 'en' | 'pt-br' | 'es' | 'ar'
 
 const rtlLocales: Locale[] = ['ar']
 
