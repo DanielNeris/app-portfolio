@@ -10,12 +10,14 @@ import { projects, type Project } from '@/lib/data'
 const statusKey = {
   live: 'live',
   'in-progress': 'inProgress',
+  beta: 'beta',
   private: 'private',
 } as const
 
 const statusStyle: Record<NonNullable<Project['status']>, string> = {
   live: 'text-emerald-400',
   'in-progress': 'text-accent-soft',
+  beta: 'text-amber-400',
   private: 'text-ink-subtle',
 }
 

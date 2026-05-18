@@ -9,7 +9,7 @@ export type Project = {
   metric?: string
   stack: string[]
   href: string
-  status?: 'live' | 'in-progress' | 'private'
+  status?: 'live' | 'in-progress' | 'beta' | 'private'
   year: string
 }
 
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     metric: 'Local-first',
     stack: ['Electron', 'AI / DSP', 'TypeScript', 'Audio'],
     href: 'https://larioai.com',
-    status: 'in-progress',
+    status: 'beta',
     year: '2025',
   },
   {

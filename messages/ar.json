@@ -8,6 +8,7 @@
     "status": {
       "live": "في الإنتاج",
       "inProgress": "قيد التطوير",
+      "beta": "اختبار تجريبي",
       "private": "خاص",
       "current": "حالي"
     },

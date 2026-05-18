@@ -8,6 +8,7 @@
     "status": {
       "live": "En vivo",
       "inProgress": "En progreso",
+      "beta": "En beta",
       "private": "Privado",
       "current": "Actual"
     },
