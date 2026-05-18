@@ -1,0 +1,146 @@
+{
+  "ui": {
+    "available": "Aberto a vagas de arquiteto e staff",
+    "cvResume": "CV / Currículo",
+    "experienceYears": "8+ anos",
+    "footer": "© {year} · Daniel Neris · Feito com Next.js",
+    "localTime": "GST",
+    "status": {
+      "live": "No ar",
+      "inProgress": "Em andamento",
+      "private": "Privado",
+      "current": "Atual"
+    },
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "E-mail",
+      "portfolio": "Portfólio"
+    }
+  },
+  "sections": {
+    "intro": "Início",
+    "projects": { "title": "Projetos", "accent": "entregues." },
+    "about": { "title": "Sobre", "accent": "história." },
+    "work": { "title": "Experiência", "accent": "trajetória." },
+    "skills": { "title": "Stack", "accent": "arquitetura." },
+    "education": { "title": "Estudos", "accent": "aprendizado." },
+    "certifications": { "title": "Certificações", "accent": "credenciais." },
+    "contact": { "title": "Contato", "accent": "vamos construir." }
+  },
+  "hero": {
+    "description": "Projetando arquiteturas <accent>cloud-native</accent> na AWS para plataformas de fintech, Web3 e ambientes regulados. <ink>Sistemas distribuídos, serviços event-driven e integrações on-chain</ink> entregues em produção."
+  },
+  "projects": {
+    "lario": {
+      "name": "Lario",
+      "description": "Aprimoramento de voz com IA em tempo real para desktop. Pipeline de áudio local-first que limpa ruídos, restaura nitidez e roda totalmente no dispositivo. Nenhum áudio sai da máquina."
+    },
+    "zuvia": {
+      "name": "Zuvia · Plataforma de Ativos Tokenizados",
+      "description": "Plataforma end-to-end para tokenização de imóveis. Integração on-chain/off-chain, dashboards de investidores e fluxos financeiros regulados movimentando transações de alto valor."
+    },
+    "nova": {
+      "name": "Nova · Plataforma de KYC & Compliance",
+      "description": "Infraestrutura de verificação de identidade com OCR, biometria facial e liveness. Construí workflows assíncronos e SDKs para parceiros, escalando onboarding regulado."
+    },
+    "smoolos": {
+      "name": "Smoolos · Clube NFT & dApps",
+      "description": "Plataforma de comunidade Web3 com acesso via NFT, apostas on-chain e mecânicas de recompensa em smart contracts. Contratos Solidity conectados a um backend Node.js com integração completa de carteiras Web3."
+    }
+  },
+  "experience": {
+    "nova": {
+      "role": "Senior Software Engineer",
+      "company": "Nova Information Technology",
+      "location": "Dubai, EAU",
+      "period": "Mar 2025 até hoje",
+      "points": [
+        "Projetei e construí APIs de KYC e compliance em Node.js/TypeScript suportando 20K+ verificações de identidade.",
+        "Integrei OCR, biometria facial e liveness, reduzindo falsos negativos em 35%.",
+        "Desenvolvi SDKs para parceiros que reduziram o setup de onboarding de 2 dias para 4 horas.",
+        "Entreguei workflows assíncronos e serviços backend modulares para dados regulados."
+      ]
+    },
+    "zuvia": {
+      "role": "Principal Software Engineer & Co-fundador",
+      "company": "Zuvia",
+      "location": "São Paulo, Brasil",
+      "period": "Set 2022 até Mar 2025",
+      "points": [
+        "Co-fundei a Zuvia e liderei a arquitetura da plataforma de tokenização administrando R$200M+ em ativos reais.",
+        "Escalei a adoção para 5K+ investidores ativos com 99,9% de uptime em produção.",
+        "Conectei contratos Solidity a microsserviços Node.js e dashboards de investidores.",
+        "Projetei a infraestrutura backend modular em PostgreSQL, MongoDB e Redis, com idempotência e rastreabilidade fortes.",
+        "Liderei a entrega end-to-end dos fluxos financeiros regulados: segurança, escalabilidade e confiabilidade."
+      ]
+    },
+    "shsquads": {
+      "role": "Senior Software Engineer",
+      "company": "SHSquads",
+      "location": "São Paulo, Brasil",
+      "period": "Out 2024 até Mar 2025",
+      "points": [
+        "Entreguei sistemas backend para 5 clientes de fintech alimentando produtos com 100K+ usuários.",
+        "Construí APIs e integrações em Node.js, Next.js e React Native.",
+        "Aumentei a velocidade de entrega e a qualidade entre backend e frontend.",
+        "Ajudei a lançar produtos financeiros escaláveis em ambientes regulados."
+      ]
+    },
+    "skydan": {
+      "role": "Lead Software Engineer & Co-fundador",
+      "company": "SkyDan",
+      "location": "São Paulo, Brasil",
+      "period": "Ago 2021 até Set 2022",
+      "points": [
+        "Liderei a arquitetura Web3 e backend de dApps de NFT e apostas usando Solidity e Node.js.",
+        "Projetei fluxos P2P de transação e mecânicas de recompensa em smart contracts para gaming descentralizado.",
+        "Geri um pequeno time de engenharia. Code reviews, decisões de arquitetura e ritmo de entrega."
+      ]
+    },
+    "liveon": {
+      "role": "Software Engineer",
+      "company": "Live On Solutions",
+      "location": "Jaú, Brasil",
+      "period": "Jan 2019 até Ago 2021",
+      "points": [
+        "Construí sistemas fintech BaaS/CaaS: carteiras, crédito e transações com dinheiro real em Node.js, React e PostgreSQL.",
+        "Reduzi a latência das APIs em 40% via otimização de queries e redesenho do backend.",
+        "Entreguei sistemas financeiros em produção junto a times de produto multifuncionais."
+      ]
+    }
+  },
+  "about": {
+    "role": "<accent>Arquiteto Sênior de Software</accent> com <strong>8+ anos</strong> projetando sistemas cloud-native na AWS para <ink>fintech, Web3 e plataformas reguladas</ink>. No dia a dia entre Node.js, TypeScript, Go, arquiteturas event-driven e dados distribuídos.",
+    "tokenization": "Arquitetei a plataforma de tokenização da Zuvia administrando <accent>R$200M+</accent> em ativos reais com <accent>5K+ investidores ativos</accent> e 99,9% de uptime em produção. Contratos Solidity conectados a um backend Node.js modular com idempotência e rastreabilidade.",
+    "kyc": "Atualmente projetando infraestrutura de KYC e compliance que processa <accent>20K+ verificações de identidade</accent>. OCR, biometria facial e liveness integrados via workflows assíncronos, reduzindo falsos negativos em <strong>35%</strong> e onboarding de parceiros de 2 dias para 4 horas.",
+    "mindset": "<italic>Mentalidade de arquiteto, propriedade end-to-end.</italic> Co-fundei duas empresas. Confortável do system design e ADRs até incidentes em produção e mentoria de time. Lidero decisões de arquitetura e escrevo o código que as comprova."
+  },
+  "education": {
+    "msc": {
+      "degree": "Mestrado em Ciência de Dados",
+      "institution": "Previsto para 2026",
+      "note": "Estatística avançada, sistemas de ML e engenharia de dados distribuída."
+    },
+    "bsc": {
+      "degree": "Análise e Desenvolvimento de Sistemas",
+      "institution": "Descomplica Faculdade",
+      "location": "São Paulo, Brasil"
+    },
+    "english": {
+      "degree": "Intensive English Programme",
+      "institution": "Stellenbosch University",
+      "location": "Stellenbosch, África do Sul"
+    }
+  },
+  "certifications": {
+    "blockchain": {
+      "degree": "Certified Blockchain Developer",
+      "institution": "Estudo independente · Solidity & EVM"
+    },
+    "aws": {
+      "degree": "AWS Certified Solutions Architect",
+      "institution": "Em andamento"
+    }
+  }
+}
