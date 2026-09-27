@@ -29,7 +29,6 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-geist-sans)', 'ui-sans-serif', 'system-ui'],
         mono: ['var(--font-geist-mono)', 'ui-monospace', 'monospace'],
-        serif: ['var(--font-fraunces)', 'ui-serif', 'Georgia'],
       },
       letterSpacing: {
         tightest: '-0.04em',

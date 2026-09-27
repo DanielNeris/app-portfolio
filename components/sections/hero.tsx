@@ -102,7 +102,7 @@ export function Hero() {
                   />
                 </div>
                 <p className="mt-1.5 font-mono text-sm text-ink-muted">
-                  <span className="text-ink">{profile.title}</span>
+                  <span className="text-ink">{tHero('title')}</span>
                   <span aria-hidden className="mx-1.5 text-ink-faint">
                     ·
                   </span>
@@ -121,7 +121,7 @@ export function Hero() {
                       aria-hidden
                       strokeWidth={2.2}
                     />
-                    {profile.location}
+                    {tHero('location')}
                   </span>
                   <LocalTime />
                 </div>
@@ -141,7 +141,7 @@ export function Hero() {
             <p className="mt-7 text-pretty leading-relaxed text-ink-muted sm:text-[15px]">
               {tHero.rich('description', {
                 accent: chunks => (
-                  <span className="serif-italic text-ink">{chunks}</span>
+                  <span className="whitespace-nowrap text-accent-soft">{chunks}</span>
                 ),
                 ink: chunks => <span className="text-ink">{chunks}</span>,
               })}

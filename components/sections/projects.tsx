@@ -12,6 +12,7 @@ const statusKey = {
   'in-progress': 'inProgress',
   beta: 'beta',
   private: 'private',
+  'open-source': 'openSource',
 } as const
 
 const statusStyle: Record<NonNullable<Project['status']>, string> = {
@@ -19,6 +20,7 @@ const statusStyle: Record<NonNullable<Project['status']>, string> = {
   'in-progress': 'text-accent-soft',
   beta: 'text-amber-400',
   private: 'text-ink-subtle',
+  'open-source': 'text-accent-soft',
 }
 
 export function Projects() {
@@ -60,31 +62,28 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         className="card card-hover group relative flex h-full flex-col p-5 hover:border-accent/40 sm:p-6"
       >
         <div className="flex items-start justify-between gap-4">
-          <div className="min-w-0 flex-1">
-            <div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
-              <h3 className="text-base font-semibold tracking-tight text-ink">
-                {tProj('name')}
-              </h3>
-              {project.status && (
-                <span
-                  className={`font-mono text-[10px] uppercase tracking-[0.16em] ${statusStyle[project.status]}`}
-                >
-                  · {tStatus(statusKey[project.status])}
-                </span>
-              )}
-            </div>
-            <p className="mt-1.5 font-mono text-[13px] leading-relaxed text-ink-muted">
-              {tProj('description')}
-            </p>
+          <div className="flex min-w-0 flex-1 flex-wrap items-baseline gap-x-2.5 gap-y-1">
+            <h3 className="text-base font-semibold tracking-tight text-ink">
+              {tProj('name')}
+            </h3>
+            {project.status && (
+              <span
+                className={`font-mono text-[10px] uppercase tracking-[0.16em] ${statusStyle[project.status]}`}
+              >
+                · {tStatus(statusKey[project.status])}
+              </span>
+            )}
           </div>
-          {project.metric && (
-            <div className="shrink-0 text-right">
-              <div className="bg-gradient-to-br from-accent-soft to-accent bg-clip-text text-2xl font-semibold tracking-tight text-transparent tabular">
-                {project.metric}
-              </div>
-            </div>
-          )}
+          <div
+            dir="auto"
+            className="shrink-0 bg-gradient-to-br from-accent-soft to-accent bg-clip-text text-2xl font-semibold tracking-tight text-transparent tabular"
+          >
+            {tProj('metric')}
+          </div>
         </div>
+        <p className="mt-3 flex-1 font-mono text-[13px] leading-relaxed text-ink-muted">
+          {tProj('description')}
+        </p>
 
         <div className="mt-5 flex flex-wrap items-center gap-1.5">
           {project.stack.map(tag => (

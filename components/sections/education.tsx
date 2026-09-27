@@ -17,29 +17,36 @@ export function Education() {
         <Spotlight className="card p-6 sm:p-8">
           <Stagger staggerChildren={0.05}>
             <ul className="divide-y divide-line">
-              {education.map((item, i) => (
-                <StaggerItem key={item.id}>
-                  <li
-                    className={`flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 ${i === 0 ? 'pb-4' : 'py-4'} last:pb-0`}
-                  >
+              {education.map(item => (
+                <StaggerItem
+                  key={item.id}
+                  className="py-4 first:pt-0 last:pb-0"
+                >
+                  <li className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                     <div>
                       <h3 className="text-sm font-semibold tracking-tight text-ink">
                         {tEdu(`${item.id}.degree`)}
                       </h3>
                       <p className="mt-0.5 font-mono text-xs text-ink-muted">
                         {tEdu(`${item.id}.institution`)}
-                        {item.hasLocation && (
+                        <span aria-hidden className="mx-2 text-ink-faint">
+                          /
+                        </span>
+                        {tEdu(`${item.id}.location`)}
+                        {item.hasNote && (
                           <>
                             <span aria-hidden className="mx-2 text-ink-faint">
                               /
                             </span>
-                            {tEdu(`${item.id}.location`)}
+                            <span className="text-accent-soft tabular">
+                              {tEdu(`${item.id}.note`)}
+                            </span>
                           </>
                         )}
                       </p>
                     </div>
                     <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-accent-soft/80 tabular">
-                      {item.period}
+                      {tEdu(`${item.id}.period`)}
                     </span>
                   </li>
                 </StaggerItem>

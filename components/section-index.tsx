@@ -11,6 +11,7 @@ const sectionIds = [
   { id: 'skills', key: 'skills.title' },
   { id: 'education', key: 'education.title' },
   { id: 'certifications', key: 'certifications.title' },
+  { id: 'languages', key: 'languages.title' },
   { id: 'contact', key: 'contact.title' },
 ] as const
 

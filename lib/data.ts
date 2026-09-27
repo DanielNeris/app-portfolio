@@ -6,10 +6,9 @@ export type SocialLink = {
 
 export type Project = {
   id: string
-  metric?: string
   stack: string[]
   href: string
-  status?: 'live' | 'in-progress' | 'beta' | 'private'
+  status?: 'live' | 'in-progress' | 'beta' | 'private' | 'open-source'
   year: string
 }
 
@@ -22,8 +21,9 @@ export type ExperienceItem = {
 }
 
 export type SkillGroup = {
-  category: string
+  id: string
   items: string[]
+  focus?: boolean
 }
 
 export type EducationItem = {
@@ -32,13 +32,6 @@ export type EducationItem = {
 
 export const profile = {
   name: 'Daniel Neris',
-  title: 'Senior Software Architect',
-  location: 'Dubai, UAE',
-  available: 'Open to architect & staff roles',
-  tagline:
-    'Designing cloud-native architectures for fintech, Web3 and regulated platforms.',
-  summary:
-    '8+ years architecting and operating distributed systems on AWS. Event-driven services, idempotent data flows, on-chain integrations and observability built in from day one. I lead architecture end-to-end: from system design and ADRs to production incidents and team mentoring.',
   email: 'danielneris01@gmail.com',
   phone: '+971 52 961 8933',
 }
@@ -53,13 +46,6 @@ export const socials: SocialLink[] = [
   { label: 'Email', href: 'mailto:danielneris01@gmail.com' },
 ]
 
-export const stats = [
-  { value: '8+', label: 'Years in production' },
-  { value: 'R$200M+', label: 'Tokenized assets shipped' },
-  { value: '5K+', label: 'Active investors served' },
-  { value: '99.9%', label: 'Uptime mindset' },
-]
-
 export const navLinks = [
   { label: 'Work', href: '#work' },
   { label: 'Projects', href: '#projects' },
@@ -70,32 +56,42 @@ export const navLinks = [
 
 export const projects: Project[] = [
   {
+    id: 'zuvia',
+    stack: ['Node.js', 'PostgreSQL', 'Event-Driven', 'Solidity', 'Next.js'],
+    href: 'https://app.zuvia.com.br',
+    status: 'live',
+    year: '2022 / 2025',
+  },
+  {
+    id: 'retry',
+    stack: ['Pear', 'Hyperdrive', 'Hyperbee', 'Protomux', 'QVAC'],
+    href: 'https://github.com/DanielNeris/retry',
+    status: 'open-source',
+    year: '2026',
+  },
+  {
+    id: 'ecommerce',
+    stack: ['NestJS', 'Kafka', 'PostgreSQL', 'Redis', 'OpenSearch'],
+    href: 'https://github.com/DanielNeris/event-driven-ecommerce-system',
+    status: 'open-source',
+    year: '2026',
+  },
+  {
+    id: 'udp',
+    stack: ['Node.js', 'UDP', 'Networking'],
+    href: 'https://github.com/DanielNeris/udp-from-scratch',
+    status: 'open-source',
+    year: '2026',
+  },
+  {
     id: 'lario',
-    metric: 'Local-first',
     stack: ['Electron', 'AI / DSP', 'TypeScript', 'Audio'],
     href: 'https://larioai.com',
     status: 'beta',
     year: '2025',
   },
   {
-    id: 'zuvia',
-    metric: 'R$200M+',
-    stack: ['Solidity', 'Node.js', 'PostgreSQL', 'Redis', 'Next.js'],
-    href: 'https://app.zuvia.com.br',
-    status: 'live',
-    year: '2022 / 2025',
-  },
-  {
-    id: 'nova',
-    metric: '20K+',
-    stack: ['Node.js', 'TypeScript', 'OCR', 'Event-Driven', 'AWS'],
-    href: 'https://thenovaweb.com',
-    status: 'live',
-    year: '2025 / Present',
-  },
-  {
     id: 'smoolos',
-    metric: 'On-chain',
     stack: ['Solidity', 'Node.js', 'React', 'Web3'],
     href: 'https://smoolos-club-dapp.netlify.app',
     status: 'live',
@@ -109,106 +105,157 @@ export const experiences: ExperienceItem[] = [
     url: 'https://thenovaweb.com',
     start: '2025',
     end: 'Present',
-    stack: ['Node.js', 'TypeScript', 'AWS', 'OCR', 'Event-Driven'],
+    stack: ['Node.js', 'TypeScript', 'Async Workflows', 'State Machines'],
   },
   {
     id: 'zuvia',
     url: 'https://zuvia.com.br',
     start: '2022',
     end: '2025',
-    stack: ['Solidity', 'Node.js', 'PostgreSQL', 'Redis', 'MongoDB'],
+    stack: [
+      'Node.js',
+      'PostgreSQL',
+      'Event-Driven',
+      'Redis',
+      'MongoDB',
+      'Solidity',
+    ],
   },
   {
     id: 'shsquads',
     url: 'https://shsquads.com',
     start: '2024',
     end: '2025',
-    stack: ['Node.js', 'Next.js', 'React Native', 'TypeScript'],
+    stack: ['Node.js', 'TypeScript', 'Next.js', 'React Native'],
   },
   {
     id: 'skydan',
     start: '2021',
     end: '2022',
-    stack: ['Solidity', 'Node.js', 'React', 'Web3'],
+    stack: ['Node.js', 'Solidity', 'Web3', 'React'],
   },
   {
     id: 'liveon',
     start: '2019',
     end: '2021',
-    stack: ['Node.js', 'React', 'PostgreSQL', 'MongoDB'],
-  },
-]
-
-export const aboutBlocks = [
-  {
-    heading: 'Backend & platform architecture',
-    body: 'I design systems that survive production. APIs, event-driven services, distributed workflows, idempotent data flows, built with clear service boundaries and observability from day one.',
+    stack: ['Node.js', 'PostgreSQL', 'MongoDB', 'React'],
   },
   {
-    heading: 'Regulated & privacy-first by default',
-    body: 'Most of my work touches money or identity. KYC pipelines, tokenization rails, on-chain/off-chain bridges, designed under compliance constraints without sacrificing developer ergonomics.',
-  },
-  {
-    heading: 'Cloud, scale & reliability',
-    body: 'PostgreSQL, MongoDB, Redis, Kafka on AWS. Modular services, CI/CD that ships safely, performance tuned where it matters, and instrumentation that tells you when it does not.',
-  },
-  {
-    heading: 'Builder mindset, end-to-end',
-    body: 'Co-founded two companies. Comfortable owning the full arc, from architectural decision to production incident to retrospective. I build with product, not around it.',
+    id: 'amais',
+    start: '2018',
+    end: '2018',
   },
 ]
 
 export const skillGroups: SkillGroup[] = [
   {
-    category: 'Backend',
-    items: ['Node.js', 'TypeScript', 'NestJS', 'REST APIs', 'GraphQL', 'Microservices'],
-  },
-  {
-    category: 'Architecture',
+    id: 'architecture',
     items: [
-      'Distributed Systems',
-      'Event-Driven',
+      'System Design',
       'Domain-Driven Design',
-      'Idempotency',
-      'Observability',
+      'Microservices',
+      'Event-Driven Architecture',
+      'Event Sourcing',
+      'CQRS',
+      'REST APIs',
     ],
   },
   {
-    category: 'Cloud & DevOps',
-    items: ['AWS', 'Docker', 'CI/CD', 'GitHub Actions', 'Linux'],
+    id: 'backend',
+    items: ['Node.js', 'TypeScript', 'Go', 'JavaScript', 'NestJS', 'Express'],
   },
   {
-    category: 'Databases & Streaming',
-    items: ['PostgreSQL', 'MongoDB', 'Redis', 'Kafka'],
+    id: 'distributed',
+    items: [
+      'Transactional Outbox',
+      'Saga',
+      'Idempotency',
+      'Circuit Breaker',
+      'Retries & Backoff',
+      'Dead-Letter Queues',
+      'Rate Limiting',
+    ],
   },
   {
-    category: 'Blockchain',
-    items: ['Solidity', 'Tokenization', 'P2P Systems', 'Web3 Infrastructure'],
+    id: 'p2p',
+    focus: true,
+    items: [
+      'Holepunch/Pear',
+      'Hypercore',
+      'Hyperdrive',
+      'Hyperbee',
+      'Autobase',
+      'Protomux',
+      'UDP',
+    ],
   },
   {
-    category: 'AI',
-    items: ['LLM Integration', 'RAG', 'AI Product Engineering', 'Audio AI'],
+    id: 'data',
+    items: [
+      'PostgreSQL',
+      'Apache Kafka',
+      'BullMQ',
+      'Redis',
+      'MongoDB',
+      'MySQL',
+      'OpenSearch',
+      'Prisma',
+    ],
   },
   {
-    category: 'Frontend',
-    items: ['Next.js', 'React', 'React Native', 'Tailwind'],
+    id: 'cloud',
+    items: [
+      'AWS',
+      'EC2',
+      'S3',
+      'Serverless',
+      'Lambda',
+      'ECS',
+      'SQS',
+      'SNS',
+      'EventBridge',
+      'API Gateway',
+      'IAM',
+      'VPC',
+    ],
   },
   {
-    category: 'Leadership',
-    items: ['Ownership', 'Mentoring', 'Tech Strategy', 'Hiring'],
+    id: 'security',
+    items: ['OAuth2', 'JWT'],
+  },
+  {
+    id: 'fintech',
+    items: [
+      'Tokenization',
+      'Smart Contracts',
+      'Solidity',
+      'Ethereum',
+      'Multisig Wallets',
+      'Banking-as-a-Service',
+    ],
+  },
+  {
+    id: 'frontend',
+    items: ['Next.js', 'React', 'React Native', 'Expo'],
+  },
+  {
+    id: 'devops',
+    items: ['Docker', 'CI/CD', 'GitHub Actions', 'Jest', 'Vitest', 'Cypress'],
   },
 ]
 
-export const education: (EducationItem & {
-  period: string
-  hasLocation?: boolean
-})[] = [
-  { id: 'msc', period: '2026 to 2028' },
-  { id: 'bsc', period: 'Jan 2024 to Dec 2026', hasLocation: true },
-  { id: 'english', period: 'Mar 2024 to Dec 2024', hasLocation: true },
+export const education: (EducationItem & { hasNote?: boolean })[] = [
+  { id: 'computerScience' },
+  { id: 'systems', hasNote: true },
+  { id: 'english' },
+  { id: 'webDev' },
+  { id: 'itTechnician' },
 ]
 
-export const certifications: (EducationItem & { period: string })[] = [
-  { id: 'blockchain', period: 'Nov 2025' },
-  { id: 'aws', period: 'Jan 2026' },
+export const certifications: EducationItem[] = [{ id: 'blockchain' }]
+
+export const languages: { id: string }[] = [
+  { id: 'portuguese' },
+  { id: 'english' },
+  { id: 'spanish' },
 ]

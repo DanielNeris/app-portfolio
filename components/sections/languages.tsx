@@ -4,35 +4,30 @@ import { useTranslations } from 'next-intl'
 import { SectionHeading } from '../section-heading'
 import { Spotlight } from '../spotlight'
 import { Stagger, StaggerItem } from '../reveal'
-import { certifications } from '@/lib/data'
+import { languages } from '@/lib/data'
 
-export function Certifications() {
-  const tSection = useTranslations('sections.certifications')
-  const tCert = useTranslations('certifications')
+export function Languages() {
+  const tSection = useTranslations('sections.languages')
+  const tLang = useTranslations('languages')
 
   return (
-    <section id="certifications" className="scroll-mt-20 pt-12 sm:pt-16">
+    <section id="languages" className="scroll-mt-20 pt-12 sm:pt-16">
       <div className="container-x">
         <SectionHeading title={tSection('title')} accent={tSection('accent')} />
         <Spotlight className="card p-6 sm:p-8">
           <Stagger staggerChildren={0.05}>
             <ul className="divide-y divide-line">
-              {certifications.map(item => (
+              {languages.map(item => (
                 <StaggerItem
                   key={item.id}
                   className="py-4 first:pt-0 last:pb-0"
                 >
                   <li className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-                    <div>
-                      <h3 className="text-sm font-semibold tracking-tight text-ink">
-                        {tCert(`${item.id}.degree`)}
-                      </h3>
-                      <p className="mt-0.5 font-mono text-xs text-ink-muted">
-                        {tCert(`${item.id}.institution`)}
-                      </p>
-                    </div>
+                    <h3 className="text-sm font-semibold tracking-tight text-ink">
+                      {tLang(`${item.id}.name`)}
+                    </h3>
                     <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-accent-soft/80 tabular">
-                      {tCert(`${item.id}.period`)}
+                      {tLang(`${item.id}.level`)}
                     </span>
                   </li>
                 </StaggerItem>

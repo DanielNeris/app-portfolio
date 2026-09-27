@@ -1,93 +1,62 @@
 'use client'
 
-import {
-  SiNodedotjs,
-  SiTypescript,
-  SiJavascript,
-  SiGo,
-  SiSolidity,
-  SiApachekafka,
-  SiDocker,
-  SiKubernetes,
-  SiTerraform,
-  SiNginx,
-  SiGithubactions,
-  SiPrometheus,
-  SiMongodb,
-  SiPostgresql,
-  SiRedis,
-  SiElasticsearch,
-  SiGraphql,
-  SiReact,
-  SiNextdotjs,
-} from 'react-icons/si'
-import { Cloud } from 'lucide-react'
-import type { IconType } from 'react-icons'
-import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { SectionHeading } from '../section-heading'
 import { Spotlight } from '../spotlight'
-
-type Skill = {
-  name: string
-  Icon: IconType | typeof Cloud
-}
-
-const skills: Skill[] = [
-  { name: 'AWS', Icon: Cloud },
-  { name: 'Kubernetes', Icon: SiKubernetes },
-  { name: 'Terraform', Icon: SiTerraform },
-  { name: 'Docker', Icon: SiDocker },
-  { name: 'NGINX', Icon: SiNginx },
-  { name: 'GitHub Actions', Icon: SiGithubactions },
-  { name: 'Prometheus', Icon: SiPrometheus },
-  { name: 'Kafka', Icon: SiApachekafka },
-  { name: 'PostgreSQL', Icon: SiPostgresql },
-  { name: 'Redis', Icon: SiRedis },
-  { name: 'MongoDB', Icon: SiMongodb },
-  { name: 'Elasticsearch', Icon: SiElasticsearch },
-  { name: 'Node.js', Icon: SiNodedotjs },
-  { name: 'TypeScript', Icon: SiTypescript },
-  { name: 'JavaScript', Icon: SiJavascript },
-  { name: 'Go', Icon: SiGo },
-  { name: 'React', Icon: SiReact },
-  { name: 'Next.js', Icon: SiNextdotjs },
-  { name: 'React Native', Icon: SiReact },
-  { name: 'GraphQL', Icon: SiGraphql },
-  { name: 'Solidity', Icon: SiSolidity },
-]
+import { Stagger, StaggerItem } from '../reveal'
+import { skillGroups } from '@/lib/data'
 
 export function Skills() {
-  const t = useTranslations('sections.skills')
+  const tSection = useTranslations('sections.skills')
+  const tSkills = useTranslations('skills')
+
   return (
     <section id="skills" className="scroll-mt-20 pt-12 sm:pt-16">
       <div className="container-x">
-        <SectionHeading title={t('title')} accent={t('accent')} />
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-7">
-          {skills.map((skill, i) => (
-            <motion.div
-              key={skill.name}
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-40px' }}
-              transition={{
-                duration: 0.5,
-                delay: 0.02 * i,
-                ease: [0.2, 0.7, 0.2, 1],
-              }}
-            >
-              <Spotlight className="card group flex aspect-square flex-col items-center justify-center gap-2.5 p-3 transition-colors hover:border-accent/40">
-                <skill.Icon
-                  className="h-7 w-7 text-ink-muted transition-colors group-hover:text-accent-soft"
-                  aria-hidden
-                />
-                <span className="text-center font-mono text-[10.5px] uppercase tracking-[0.1em] text-ink-subtle transition-colors group-hover:text-ink">
-                  {skill.name}
-                </span>
-              </Spotlight>
-            </motion.div>
-          ))}
-        </div>
+        <SectionHeading title={tSection('title')} accent={tSection('accent')} />
+        <Spotlight className="card p-6 sm:p-8">
+          <Stagger staggerChildren={0.05} className="divide-y divide-line">
+            {skillGroups.map(group => (
+              <StaggerItem
+                key={group.id}
+                className="grid gap-3 py-4 first:pt-0 last:pb-0 sm:grid-cols-[11rem_1fr] sm:gap-6"
+              >
+                <div className="flex flex-wrap items-center gap-2 sm:flex-col sm:items-start sm:gap-2">
+                  <h3
+                    className={`font-mono text-[11px] uppercase tracking-[0.14em] sm:leading-[26px] ${
+                      group.focus ? 'text-accent-soft' : 'text-ink-subtle'
+                    }`}
+                  >
+                    {tSkills(group.id)}
+                  </h3>
+                  {group.focus && (
+                    <span className="inline-flex items-center gap-1.5 rounded-full border border-accent/30 bg-accent/10 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.14em] text-accent-soft">
+                      <span className="relative grid h-1 w-1 place-items-center">
+                        <span className="absolute inline-flex h-full w-full animate-pulse-slow rounded-full bg-accent/60" />
+                        <span className="relative inline-flex h-1 w-1 rounded-full bg-accent" />
+                      </span>
+                      {tSkills('focus')}
+                    </span>
+                  )}
+                </div>
+                <ul className="flex flex-wrap gap-1.5">
+                  {group.items.map(item => (
+                    <li
+                      key={item}
+                      className={`rounded border px-2 py-1 font-mono text-xs ${
+                        group.focus
+                          ? 'border-accent/30 bg-accent/10 text-ink'
+                          : 'border-line bg-bg-elevated/70 text-ink-muted'
+                      }`}
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </StaggerItem>
+            ))}
+          </Stagger>
+        </Spotlight>
       </div>
     </section>
   )

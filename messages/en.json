@@ -1,6 +1,6 @@
 {
   "ui": {
-    "available": "Open to architect & staff roles",
+    "available": "Open to senior backend & P2P roles",
     "cvResume": "CV / Resume",
     "experienceYears": "8+ years",
     "footer": "© {year} · Daniel Neris · Built with Next.js",
@@ -10,6 +10,7 @@
       "inProgress": "In progress",
       "beta": "Beta test",
       "private": "Private",
+      "openSource": "Open source",
       "current": "Current"
     },
     "social": {
@@ -24,30 +25,47 @@
     "projects": { "title": "Projects", "accent": "shipped." },
     "about": { "title": "About", "accent": "story." },
     "work": { "title": "Experience", "accent": "résumé." },
-    "skills": { "title": "Stack", "accent": "architecture." },
+    "skills": { "title": "Stack", "accent": "toolbox." },
     "education": { "title": "Studies", "accent": "learning." },
     "certifications": { "title": "Certifications", "accent": "credentials." },
+    "languages": { "title": "Languages", "accent": "spoken." },
     "contact": { "title": "Contact", "accent": "build with me." }
   },
   "hero": {
-    "description": "Designing <accent>cloud-native</accent> architectures on AWS for fintech, Web3 and regulated platforms. <ink>Distributed systems, event-driven services, on-chain integrations</ink> shipped to production."
+    "title": "Senior Backend Engineer",
+    "location": "Dubai, UAE",
+    "description": "Building production backends in <ink>Node.js and TypeScript</ink> for fintech, banking and Web3. Now focused on <accent>privacy-first</accent>, decentralized, peer-to-peer software on the <ink>Holepunch/Pear</ink> stack."
   },
   "projects": {
-    "lario": {
-      "name": "Lario",
-      "description": "Real-time AI voice enhancement for desktop. Local-first audio pipeline that cleans noise, restores clarity and ships entirely on-device. No audio ever leaves the machine."
-    },
     "zuvia": {
       "name": "Zuvia · Tokenized Asset Platform",
-      "description": "End-to-end platform for real estate tokenization. On-chain/off-chain integration, investor dashboards and regulated financial workflows powering high-value transactions."
+      "description": "The platform behind Brazil's first real estate tokenization on B3 infrastructure, with R$300M+ in transaction volume. Event-driven Node.js microservices on PostgreSQL, Solidity contracts and multisig wallets for 8,000+ investors.",
+      "metric": "R$300M+"
     },
-    "nova": {
-      "name": "Nova · KYC & Compliance Platform",
-      "description": "Identity verification infrastructure with OCR, facial matching and liveness checks. Built async workflows and partner SDKs for regulated onboarding at scale."
+    "retry": {
+      "name": "retry · Peer-to-Peer Interviews",
+      "description": "Asynchronous interviews that run peer-to-peer on Pear. Candidates re-record until it's right, and only the take they send ever exists. Blind-pairing invites, Hyperdrive replication and on-device AI. No server, no API calls.",
+      "metric": "0 servers"
+    },
+    "ecommerce": {
+      "name": "Event-Driven E-commerce · Kafka Microservices",
+      "description": "NestJS microservices over Kafka: transactional outbox, saga with compensation, Redis distributed locks, retries with dead-letter queues and a CQRS read model on OpenSearch.",
+      "metric": "9 services"
+    },
+    "udp": {
+      "name": "udp-from-scratch · Reliable Transport over UDP",
+      "description": "Reliable transport on raw UDP in Node.js: a 5-byte binary header, acknowledgements, per-packet retransmission and a three-way handshake that stops blind spoofing. Built to show what TCP actually solves.",
+      "metric": "0 deps"
+    },
+    "lario": {
+      "name": "Lario",
+      "description": "Real-time AI voice enhancement for desktop. Local-first audio pipeline that cleans noise, restores clarity and ships entirely on-device. No audio ever leaves the machine.",
+      "metric": "Local-first"
     },
     "smoolos": {
       "name": "Smoolos · NFT Club & dApps",
-      "description": "Web3 community platform with NFT-gated access, on-chain betting and smart-contract reward mechanics. Solidity contracts wired to a Node.js backend with full Web3 wallet integration."
+      "description": "Web3 community platform with NFT-gated access, on-chain betting and smart-contract reward mechanics. Solidity contracts wired to a Node.js backend with full Web3 wallet integration.",
+      "metric": "On-chain"
     }
   },
   "experience": {
@@ -57,46 +75,46 @@
       "location": "Dubai, UAE",
       "period": "Mar 2025 to Present",
       "points": [
-        "Designed and built KYC and compliance APIs in Node.js/TypeScript supporting 20K+ identity verifications.",
-        "Integrated OCR, facial matching and liveness checks, reducing false negatives by 35%.",
-        "Engineered partner SDKs that cut onboarding setup from 2 days to 4 hours.",
-        "Delivered async workflows and modular backend services for regulated data handling."
+        "Built KYC and compliance APIs in Node.js and TypeScript supporting 20K+ identity verifications.",
+        "Designed a release management and maintenance mode platform for 3 internal applications, modeling the release lifecycle as a state machine.",
+        "Improved scalability and reliability by moving verification steps to asynchronous workflows and modular backend services.",
+        "Delivered secure identity systems handling sensitive customer data under regulatory requirements."
       ]
     },
     "zuvia": {
       "role": "Principal Software Engineer & Co-founder",
       "company": "Zuvia",
       "location": "São Paulo, Brazil",
-      "period": "Sept 2022 to Mar 2025",
+      "period": "Sep 2022 to Mar 2025",
       "points": [
-        "Co-founded Zuvia and led the architecture of a tokenization platform managing R$200M+ in real-world assets.",
-        "Scaled platform adoption to 5K+ active investors with 99.9% production uptime.",
-        "Connected Solidity smart contracts to Node.js microservices and investor dashboards.",
-        "Designed modular backend infrastructure on PostgreSQL, MongoDB and Redis with strong idempotency and traceability.",
-        "Owned end-to-end delivery for regulated financial workflows: security, scalability and reliability."
+        "Built a real estate tokenization platform with Next.js, event-driven microservices and PostgreSQL, reaching R$300M+ in transaction volume.",
+        "Scaled the platform to 8,000+ active investors through reliable backend and product architecture.",
+        "Delivered the platform behind Brazil's first real estate tokenization on B3 infrastructure.",
+        "Integrated Solidity smart contracts and multisig wallets with Node.js microservices and investor dashboards.",
+        "Designed a modular architecture with PostgreSQL, Redis and MongoDB, plus CI/CD pipelines for secure, reliable deployments.",
+        "Led technical decisions across backend, product delivery and platform evolution."
       ]
     },
     "shsquads": {
-      "role": "Senior Software Engineer",
+      "role": "Senior Software Engineer (Contract)",
       "company": "SHSquads",
       "location": "São Paulo, Brazil",
       "period": "Oct 2024 to Mar 2025",
       "points": [
-        "Delivered backend systems for 5 fintech clients powering products with 100K+ users.",
-        "Built production APIs and integrations across Node.js, Next.js and React Native.",
-        "Improved delivery speed and engineering quality across backend and frontend boundaries.",
-        "Helped launch scalable financial products in regulated environments."
+        "Delivered backend systems for 5 fintech clients supporting products with 100K+ users.",
+        "Built production APIs and integrations with Node.js, Next.js and React Native.",
+        "Helped launch scalable financial products in regulated environments, improving delivery speed and code quality."
       ]
     },
     "skydan": {
       "role": "Lead Software Engineer & Co-founder",
       "company": "SkyDan",
       "location": "São Paulo, Brazil",
-      "period": "Aug 2021 to Sept 2022",
+      "period": "Aug 2021 to Sep 2022",
       "points": [
-        "Led Web3 and backend architecture across NFT and betting dApps using Solidity and Node.js.",
-        "Designed P2P transaction flows and smart-contract reward mechanics for decentralized gaming.",
-        "Managed a small engineering team. Code reviews, architecture decisions, delivery cadence."
+        "Designed Web3 and backend architecture for NFT and betting dApps using Solidity and Node.js.",
+        "Led engineering execution while remaining hands-on in core product development.",
+        "Improved delivery consistency through code reviews and architecture decisions."
       ]
     },
     "liveon": {
@@ -105,43 +123,92 @@
       "location": "Jaú, Brazil",
       "period": "Jan 2019 to Aug 2021",
       "points": [
-        "Built BaaS/CaaS fintech systems: wallets, lending and real-money transactions in Node.js, React and PostgreSQL.",
-        "Improved API latency by 40% via query optimization and backend redesign.",
-        "Delivered production financial systems alongside cross-functional product teams."
+        "Built Banking-as-a-Service and lending systems using Node.js, React and PostgreSQL.",
+        "Improved API latency by 40% through query optimization and backend redesign.",
+        "Delivered financial systems supporting digital wallets, lending and real-money transactions."
+      ]
+    },
+    "amais": {
+      "role": "Software Developer",
+      "company": "Amais Terceiro Setor",
+      "location": "Jaú, Brazil",
+      "period": "Oct 2018 to Dec 2018",
+      "points": [
+        "Developed internal tools for data management and reporting in the non-profit sector."
       ]
     }
   },
   "about": {
-    "role": "<accent>Senior Software Architect</accent> with <strong>8+ years</strong> designing cloud-native systems on AWS across <ink>fintech, Web3 and regulated platforms</ink>. Day-to-day across Node.js, TypeScript, Go, event-driven architectures and distributed data.",
-    "tokenization": "Architected the tokenization platform at Zuvia managing <accent>R$200M+</accent> in real-world assets with <accent>5K+ active investors</accent> and 99.9% production uptime. On-chain Solidity contracts bridged to a modular Node.js backend with strong idempotency and traceability.",
-    "kyc": "Currently designing KYC and compliance infrastructure powering <accent>20K+ identity verifications</accent>. OCR, facial matching and liveness checks integrated through async workflows, cutting false negatives by <strong>35%</strong> and partner onboarding from 2 days to 4 hours.",
-    "mindset": "<italic>Architect mindset, end-to-end ownership.</italic> Co-founded two companies. Comfortable from system design and ADRs to production incidents and team mentoring. I lead architecture decisions and write the code that proves them out."
+    "role": "<accent>Senior Backend Engineer</accent> with <strong>8+ years</strong> building production systems in <ink>Node.js and TypeScript</ink>. I work in fintech and have built banking systems (digital wallets, lending, Banking-as-a-Service), tokenization platforms and Web3 backends.",
+    "p2p": "<italic>Where I'm heading: privacy-first, decentralized, peer-to-peer.</italic> I build on the Holepunch/Pear stack (Hypercore, Hyperdrive, Hyperbee, Autobase), where data stays on the devices of the people who own it. My interview app <accent>retry</accent> runs with no server and on-device AI, and I wrote a reliable transport over raw UDP from scratch.",
+    "tokenization": "Co-founded Zuvia and built its tokenization platform: <accent>R$300M+</accent> in transaction volume, <accent>8,000+ active investors</accent> and the platform behind Brazil's first real estate tokenization on B3 infrastructure. Event-driven Node.js microservices on PostgreSQL, integrated with Solidity contracts and multisig wallets.",
+    "mindset": "<italic>Owner's mindset, hands on the code.</italic> Co-founded two companies. Comfortable from system design to production incidents and team mentoring. I make the technical calls and write the code that proves them out."
+  },
+  "skills": {
+    "focus": "Current focus",
+    "architecture": "Architecture & design",
+    "backend": "Backend",
+    "distributed": "Distributed systems",
+    "p2p": "P2P & networking",
+    "data": "Data & messaging",
+    "cloud": "Cloud",
+    "security": "Security",
+    "fintech": "Fintech & Web3",
+    "frontend": "Frontend & mobile",
+    "devops": "DevOps & testing"
   },
   "education": {
-    "msc": {
-      "degree": "MSc Data Science",
-      "institution": "Planned for 2026",
-      "note": "Advanced statistics, ML systems, distributed data engineering."
+    "computerScience": {
+      "degree": "Bachelor's Degree in Computer Science",
+      "institution": "Descomplica",
+      "location": "São Paulo, Brazil",
+      "period": "Expected Jun 2028"
     },
-    "bsc": {
-      "degree": "B.S. Systems Analysis & Development",
-      "institution": "Descomplica Faculdade",
-      "location": "São Paulo, Brazil"
+    "systems": {
+      "degree": "Technologist Degree in Systems Analysis and Development",
+      "institution": "Descomplica",
+      "location": "São Paulo, Brazil",
+      "period": "Expected Dec 2026",
+      "note": "GPA 9.43/10"
     },
     "english": {
       "degree": "Intensive English Programme",
       "institution": "Stellenbosch University",
-      "location": "Stellenbosch, South Africa"
+      "location": "Stellenbosch, South Africa",
+      "period": "Mar 2024 to Dec 2024"
+    },
+    "webDev": {
+      "degree": "Technical Course in Web Development",
+      "institution": "Etec Comendador João Rays",
+      "location": "Barra Bonita, Brazil",
+      "period": "Jan 2018 to Dec 2018"
+    },
+    "itTechnician": {
+      "degree": "Computer Technician",
+      "institution": "Etec Comendador João Rays",
+      "location": "Barra Bonita, Brazil",
+      "period": "Jun 2016 to Dec 2017"
     }
   },
   "certifications": {
     "blockchain": {
       "degree": "Certified Blockchain Developer",
-      "institution": "Independent Study · Solidity & EVM"
+      "institution": "Blockchain Council",
+      "period": "Nov 2025"
+    }
+  },
+  "languages": {
+    "portuguese": {
+      "name": "Portuguese",
+      "level": "Native"
     },
-    "aws": {
-      "degree": "AWS Certified Solutions Architect",
-      "institution": "In progress"
+    "english": {
+      "name": "English",
+      "level": "Advanced · C1"
+    },
+    "spanish": {
+      "name": "Spanish",
+      "level": "Pre-intermediate · A2–B1"
     }
   }
 }

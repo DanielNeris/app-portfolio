@@ -16,7 +16,7 @@ export function SectionHeading({ title, accent, description }: Props) {
       <h2 className="text-lg font-semibold tracking-tight text-ink">
         {title}
         {accent && (
-          <span className="serif-italic ml-2 text-accent-soft">{accent}</span>
+          <span className="ms-2 font-normal text-accent-soft">{accent}</span>
         )}
       </h2>
       {description && (

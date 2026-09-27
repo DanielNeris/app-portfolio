@@ -5,7 +5,7 @@ import { SectionHeading } from '../section-heading'
 import { Spotlight } from '../spotlight'
 import { Stagger, StaggerItem } from '../reveal'
 
-const bulletIds = ['role', 'tokenization', 'kyc', 'mindset'] as const
+const bulletIds = ['role', 'p2p', 'tokenization', 'mindset'] as const
 
 const richTags = {
   accent: (chunks: React.ReactNode) => (
@@ -18,7 +18,7 @@ const richTags = {
     <span className="text-ink">{chunks}</span>
   ),
   italic: (chunks: React.ReactNode) => (
-    <span className="serif-italic text-ink">{chunks}</span>
+    <span className="font-medium text-ink">{chunks}</span>
   ),
 }
 

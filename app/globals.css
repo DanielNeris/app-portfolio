@@ -78,14 +78,6 @@
     z-index: 1;
   }
 
-  /* Italic serif accent — uses Fraunces variable axes for sharper italic */
-  .serif-italic {
-    font-family: var(--font-fraunces), ui-serif, Georgia, serif;
-    font-style: italic;
-    font-variation-settings: 'opsz' 144, 'SOFT' 30;
-    letter-spacing: -0.02em;
-  }
-
   /* Page-wide dotted grid backdrop */
   .grid-fade {
     background-image: radial-gradient(
@@ -156,4 +148,12 @@
     );
     filter: blur(60px);
   }
+}
+
+/* Geist Mono has no Arabic glyphs, and the first fallback that does is Courier New,
+   which sets each letter in its own fixed-width cell and breaks the script's joins.
+   In RTL, mono text uses the sans stack instead. */
+[dir='rtl'] .font-mono {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  letter-spacing: normal;
 }

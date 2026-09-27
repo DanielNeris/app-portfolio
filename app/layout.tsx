@@ -1,43 +1,47 @@
 import type { Metadata, Viewport } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
-import { Fraunces } from 'next/font/google'
 import { SectionIndex } from '@/components/section-index'
 import { LanguageSwitcher } from '@/components/language-switcher'
 import { LocaleProvider } from './providers'
 import './globals.css'
-
-const fraunces = Fraunces({
-  subsets: ['latin'],
-  axes: ['opsz', 'SOFT'],
-  variable: '--font-fraunces',
-  display: 'swap',
-})
 
 const siteUrl = 'https://danielneris.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Daniel Neris · Senior Software Architect',
+    default: 'Daniel Neris · Senior Backend Engineer',
     template: '%s · Daniel Neris',
   },
   description:
-    'Senior Software Architect designing cloud-native architectures on AWS for fintech, Web3 and regulated platforms. 8+ years across Node.js, TypeScript, distributed systems and cloud infrastructure.',
+    'Senior Backend Engineer with 8+ years building production systems in Node.js and TypeScript for fintech, banking and Web3. Now focused on privacy-first, decentralized, peer-to-peer software on the Holepunch/Pear stack.',
   keywords: [
     'Daniel Neris',
-    'Senior Software Architect',
-    'Cloud Native',
-    'AWS',
-    'Backend Architect',
-    'Fintech',
-    'Web3',
+    'Senior Backend Engineer',
+    'Software Architecture',
+    'System Design',
+    'Domain-Driven Design',
+    'Event Sourcing',
     'Node.js',
     'TypeScript',
+    'Go',
     'Distributed Systems',
-    'KYC',
+    'Peer-to-Peer',
+    'P2P',
+    'Holepunch',
+    'Pear',
+    'Hypercore',
+    'Privacy-First',
+    'Decentralization',
+    'Fintech',
+    'Banking',
+    'Web3',
     'Tokenization',
-    'Solidity',
+    'Kafka',
+    'PostgreSQL',
+    'AWS',
+    'Serverless',
     'Dubai',
   ],
   authors: [{ name: 'Daniel Neris', url: siteUrl }],
@@ -47,15 +51,15 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteUrl,
     siteName: 'Daniel Neris',
-    title: 'Daniel Neris · Senior Software Architect',
+    title: 'Daniel Neris · Senior Backend Engineer',
     description:
-      'Cloud-native architect building privacy-first fintech, Web3 and KYC platforms. Based in Dubai, UAE.',
+      'Backend engineer for fintech, banking and Web3, building privacy-first, peer-to-peer software on Holepunch/Pear. Based in Dubai, UAE.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Daniel Neris · Senior Software Architect',
+    title: 'Daniel Neris · Senior Backend Engineer',
     description:
-      'Cloud-native architect building privacy-first fintech, Web3 and KYC platforms.',
+      'Backend engineer for fintech, banking and Web3, building privacy-first, peer-to-peer software on Holepunch/Pear.',
     creator: '@danielneris',
   },
   robots: {
@@ -80,7 +84,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${GeistSans.variable} ${GeistMono.variable} ${fraunces.variable}`}
+      className={`${GeistSans.variable} ${GeistMono.variable}`}
       suppressHydrationWarning
     >
       <body className="relative min-h-screen bg-bg-base text-ink antialiased selection:bg-accent/30 selection:text-white">
