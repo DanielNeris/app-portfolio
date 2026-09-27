@@ -5,6 +5,7 @@
     "experienceYears": "8+ años",
     "footer": "© {year} · Daniel Neris · Hecho con Next.js",
     "localTime": "GST",
+    "theme": "Cambiar tema",
     "status": {
       "live": "En vivo",
       "inProgress": "En progreso",

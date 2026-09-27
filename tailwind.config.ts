@@ -1,4 +1,9 @@
 import type { Config } from 'tailwindcss'
+import plugin from 'tailwindcss/plugin'
+
+// Colors are RGB channels set per theme in globals.css, so opacity
+// modifiers like bg-accent/10 keep working in both themes.
+const channel = (name: string) => `rgb(var(${name}) / <alpha-value>)`
 
 const config: Config = {
   content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
@@ -6,24 +11,28 @@ const config: Config = {
     extend: {
       colors: {
         bg: {
-          base: '#0a0a0a',
-          raised: '#111111',
-          elevated: '#161616',
+          base: channel('--bg-base'),
+          raised: channel('--bg-raised'),
+          elevated: channel('--bg-elevated'),
         },
         ink: {
-          DEFAULT: '#f5f5f5',
-          muted: '#a1a1aa',
-          subtle: '#71717a',
-          faint: '#52525b',
+          DEFAULT: channel('--ink'),
+          muted: channel('--ink-muted'),
+          subtle: channel('--ink-subtle'),
+          faint: channel('--ink-faint'),
         },
         line: {
-          DEFAULT: 'rgba(255,255,255,0.08)',
-          strong: 'rgba(255,255,255,0.14)',
+          DEFAULT: 'var(--line)',
+          strong: 'var(--line-strong)',
         },
         accent: {
-          DEFAULT: '#915EFF',
-          soft: '#A78BFA',
-          glow: 'rgba(145,94,255,0.35)',
+          DEFAULT: channel('--accent'),
+          soft: channel('--accent-soft'),
+          glow: 'rgb(var(--accent) / 0.35)',
+        },
+        status: {
+          live: channel('--status-live'),
+          beta: channel('--status-beta'),
         },
       },
       fontFamily: {
@@ -49,7 +58,9 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addVariant }) => addVariant('light', '[data-theme="light"] &')),
+  ],
 }
 
 export default config

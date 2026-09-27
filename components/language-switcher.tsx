@@ -12,7 +12,7 @@ const locales: { code: Locale; label: string }[] = [
 export function LanguageSwitcher() {
   const { locale, setLocale } = useLocale()
   return (
-    <div className="fixed right-4 top-4 z-50 flex items-center gap-0.5 rounded-full border border-line bg-bg-raised/80 p-1 backdrop-blur-md">
+    <div className="flex items-center gap-0.5 rounded-full border border-line bg-bg-raised/80 p-1 backdrop-blur-md">
       {locales.map(l => (
         <button
           key={l.code}

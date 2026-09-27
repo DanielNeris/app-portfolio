@@ -3,8 +3,44 @@
 @tailwind utilities;
 
 @layer base {
+  /* Dark is the default: it applies until the theme script picks light */
   :root {
     color-scheme: dark;
+    --bg-base: 10 10 10;
+    --bg-raised: 17 17 17;
+    --bg-elevated: 22 22 22;
+    --ink: 245 245 245;
+    --ink-muted: 161 161 170;
+    --ink-subtle: 113 113 122;
+    --ink-faint: 82 82 91;
+    --line: rgba(255, 255, 255, 0.08);
+    --line-strong: rgba(255, 255, 255, 0.14);
+    --accent: 145 94 255;
+    --accent-soft: 167 139 250;
+    --status-live: 52 211 153;
+    --status-beta: 251 191 36;
+    --grid-dot: rgba(255, 255, 255, 0.055);
+    --card-shadow: none;
+  }
+
+  /* Light keeps the brand violet for fills and icons; text accents go
+     darker so they hold 4.5:1 on white */
+  :root[data-theme='light'] {
+    color-scheme: light;
+    --bg-base: 246 245 249;
+    --bg-raised: 255 255 255;
+    --bg-elevated: 239 237 244;
+    --ink: 15 15 20;
+    --ink-muted: 75 75 87;
+    --ink-subtle: 107 107 120;
+    --ink-faint: 157 157 170;
+    --line: rgba(15, 15, 20, 0.09);
+    --line-strong: rgba(15, 15, 20, 0.16);
+    --accent-soft: 91 54 201;
+    --status-live: 4 120 87;
+    --status-beta: 180 83 9;
+    --grid-dot: rgba(15, 15, 20, 0.07);
+    --card-shadow: 0 1px 2px rgba(15, 15, 20, 0.04);
   }
 
   html {
@@ -20,7 +56,7 @@
 
   ::selection {
     background: rgba(145, 94, 255, 0.35);
-    color: #fff;
+    color: rgb(var(--ink));
   }
 
   /* Hide scrollbar on horizontal scroll containers */
@@ -82,7 +118,7 @@
   .grid-fade {
     background-image: radial-gradient(
       circle at 1px 1px,
-      rgba(255, 255, 255, 0.055) 1px,
+      var(--grid-dot) 1px,
       transparent 0
     );
     background-size: 28px 28px;
@@ -112,6 +148,7 @@
 
   .card {
     @apply rounded-2xl border border-line bg-bg-raised/70 backdrop-blur-sm;
+    box-shadow: var(--card-shadow);
   }
   .card-hover {
     @apply transition-colors hover:border-line-strong hover:bg-bg-raised;
@@ -156,4 +193,12 @@
 [dir='rtl'] .font-mono {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   letter-spacing: normal;
+}
+
+/* Theme switch: the toggle animates the new theme in as a growing circle,
+   so the default cross-fade on the root snapshot is turned off */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }

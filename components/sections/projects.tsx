@@ -16,9 +16,9 @@ const statusKey = {
 } as const
 
 const statusStyle: Record<NonNullable<Project['status']>, string> = {
-  live: 'text-emerald-400',
+  live: 'text-status-live',
   'in-progress': 'text-accent-soft',
-  beta: 'text-amber-400',
+  beta: 'text-status-beta',
   private: 'text-ink-subtle',
   'open-source': 'text-accent-soft',
 }

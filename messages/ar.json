@@ -5,6 +5,7 @@
     "experienceYears": "+8 سنوات",
     "footer": "© {year} · دانيال نيريس · مبني بـ Next.js",
     "localTime": "تو خ",
+    "theme": "تبديل المظهر",
     "status": {
       "live": "في الإنتاج",
       "inProgress": "قيد التطوير",

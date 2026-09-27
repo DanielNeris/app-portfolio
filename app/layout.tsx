@@ -3,10 +3,15 @@ import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { SectionIndex } from '@/components/section-index'
 import { LanguageSwitcher } from '@/components/language-switcher'
+import { ThemeToggle } from '@/components/theme-toggle'
 import { LocaleProvider } from './providers'
 import './globals.css'
 
 const siteUrl = 'https://danielneris.com'
+
+// Runs before first paint so the page never flashes the wrong theme:
+// a saved choice wins, then the OS preference, and dark otherwise.
+const themeScript = `(function(){var t;try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}document.documentElement.dataset.theme=t})()`
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -71,7 +76,10 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#0a0a0a',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f6f5f9' },
+    { media: '(prefers-color-scheme: dark)', color: '#0a0a0a' },
+  ],
   width: 'device-width',
   initialScale: 1,
 }
@@ -87,7 +95,11 @@ export default function RootLayout({
       className={`${GeistSans.variable} ${GeistMono.variable}`}
       suppressHydrationWarning
     >
-      <body className="relative min-h-screen bg-bg-base text-ink antialiased selection:bg-accent/30 selection:text-white">
+      <head>
+        {/* biome-ignore lint/security/noDangerouslySetInnerHtml: static inline script that sets the theme before first paint */}
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body className="relative min-h-screen bg-bg-base text-ink antialiased selection:bg-accent/30 selection:text-ink">
         <div
           aria-hidden
           className="pointer-events-none fixed inset-0 -z-10 grid-fade opacity-90"
@@ -101,7 +113,10 @@ export default function RootLayout({
           className="pointer-events-none fixed inset-0 -z-10 grain"
         />
         <LocaleProvider>
-          <LanguageSwitcher />
+          <div className="fixed right-4 top-4 z-50 flex items-center gap-2">
+            <ThemeToggle />
+            <LanguageSwitcher />
+          </div>
           <SectionIndex />
           {children}
         </LocaleProvider>
