@@ -43,11 +43,6 @@
       "description": "The platform behind Brazil's first real estate tokenization on B3 infrastructure, with R$300M+ in transaction volume. Event-driven Node.js microservices on PostgreSQL, Solidity contracts and multisig wallets for 8,000+ investors.",
       "metric": "R$300M+"
     },
-    "retry": {
-      "name": "retry · Peer-to-Peer Interviews",
-      "description": "Asynchronous interviews that run peer-to-peer on Pear. Candidates re-record until it's right, and only the take they send ever exists. Blind-pairing invites, Hyperdrive replication and on-device AI. No server, no API calls.",
-      "metric": "0 servers"
-    },
     "ecommerce": {
       "name": "Event-Driven E-commerce · Kafka Microservices",
       "description": "NestJS microservices over Kafka: transactional outbox, saga with compensation, Redis distributed locks, retries with dead-letter queues and a CQRS read model on OpenSearch.",
@@ -58,15 +53,10 @@
       "description": "Reliable transport on raw UDP in Node.js: a 5-byte binary header, acknowledgements, per-packet retransmission and a three-way handshake that stops blind spoofing. Built to show what TCP actually solves.",
       "metric": "0 deps"
     },
-    "lario": {
-      "name": "Lario",
-      "description": "Real-time AI voice enhancement for desktop. Local-first audio pipeline that cleans noise, restores clarity and ships entirely on-device. No audio ever leaves the machine.",
-      "metric": "Local-first"
-    },
-    "smoolos": {
-      "name": "Smoolos · NFT Club & dApps",
-      "description": "Web3 community platform with NFT-gated access, on-chain betting and smart-contract reward mechanics. Solidity contracts wired to a Node.js backend with full Web3 wallet integration.",
-      "metric": "On-chain"
+    "capy": {
+      "name": "Capy · Private P2P Meeting Rooms",
+      "description": "Private meeting rooms that replicate directly between participants on Pear. Voice and video calls, chat and files, then a speaker-labelled transcript, minutes and speaking insights written by on-device AI (QVAC). No accounts, and no server can read a room.",
+      "metric": "No accounts"
     }
   },
   "experience": {
@@ -141,7 +131,7 @@
   },
   "about": {
     "role": "<accent>Senior Backend Engineer</accent> with <strong>8+ years</strong> building production systems in <ink>Node.js and TypeScript</ink>. I work in fintech and have built banking systems (digital wallets, lending, Banking-as-a-Service), tokenization platforms and Web3 backends.",
-    "p2p": "<italic>Where I'm heading: privacy-first, decentralized, peer-to-peer.</italic> I build on the Holepunch/Pear stack (Hypercore, Hyperdrive, Hyperbee, Autobase), where data stays on the devices of the people who own it. My interview app <accent>retry</accent> runs with no server and on-device AI, and I wrote a reliable transport over raw UDP from scratch.",
+    "p2p": "<italic>Where I'm heading: privacy-first, decentralized, peer-to-peer.</italic> I build on the Holepunch/Pear stack (Pear, Bare, Hypercore, Autobase), where data stays on the devices of the people who own it. Under <accent>Ciranda</accent> I build <accent>Capy</accent>, private meeting rooms that replicate directly between participants, with on-device AI for transcripts and minutes, and I wrote a reliable transport over raw UDP from scratch.",
     "tokenization": "Co-founded Zuvia and built its tokenization platform: <accent>R$300M+</accent> in transaction volume, <accent>8,000+ active investors</accent> and the platform behind Brazil's first real estate tokenization on B3 infrastructure. Event-driven Node.js microservices on PostgreSQL, integrated with Solidity contracts and multisig wallets.",
     "mindset": "<italic>Owner's mindset, hands on the code.</italic> Co-founded two companies. Comfortable from system design to production incidents and team mentoring. I make the technical calls and write the code that proves them out."
   },
@@ -169,8 +159,7 @@
       "degree": "Technologist Degree in Systems Analysis and Development",
       "institution": "Descomplica",
       "location": "São Paulo, Brazil",
-      "period": "Expected Dec 2026",
-      "note": "GPA 9.43/10"
+      "period": "Expected Dec 2026"
     },
     "english": {
       "degree": "Intensive English Programme",

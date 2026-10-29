@@ -43,11 +43,6 @@
       "description": "A plataforma por trás da primeira tokenização imobiliária do Brasil na infraestrutura da B3, com R$300M+ em volume transacionado. Microsserviços Node.js event-driven sobre PostgreSQL, contratos Solidity e carteiras multisig para 8.000+ investidores.",
       "metric": "R$300M+"
     },
-    "retry": {
-      "name": "retry · Entrevistas Peer-to-Peer",
-      "description": "Entrevistas assíncronas que rodam peer-to-peer no Pear. O candidato regrava até ficar bom, e só a versão enviada chega a existir. Convites por blind-pairing, replicação via Hyperdrive e IA no próprio dispositivo. Sem servidor, sem chamadas de API.",
-      "metric": "0 servidores"
-    },
     "ecommerce": {
       "name": "E-commerce Event-Driven · Microsserviços com Kafka",
       "description": "Microsserviços NestJS sobre Kafka: transactional outbox, saga com compensação, locks distribuídos no Redis, retries com dead-letter queues e um read model CQRS no OpenSearch.",
@@ -58,15 +53,10 @@
       "description": "Transporte confiável sobre UDP puro em Node.js: header binário de 5 bytes, acknowledgements, retransmissão por pacote e um three-way handshake que barra spoofing às cegas. Feito para mostrar o que o TCP de fato resolve.",
       "metric": "0 deps"
     },
-    "lario": {
-      "name": "Lario",
-      "description": "Aprimoramento de voz com IA em tempo real para desktop. Pipeline de áudio local-first que limpa ruídos, restaura nitidez e roda totalmente no dispositivo. Nenhum áudio sai da máquina.",
-      "metric": "Local-first"
-    },
-    "smoolos": {
-      "name": "Smoolos · Clube NFT & dApps",
-      "description": "Plataforma de comunidade Web3 com acesso via NFT, apostas on-chain e mecânicas de recompensa em smart contracts. Contratos Solidity conectados a um backend Node.js com integração completa de carteiras Web3.",
-      "metric": "On-chain"
+    "capy": {
+      "name": "Capy · Salas de Reunião P2P Privadas",
+      "description": "Salas de reunião privadas que se replicam direto entre os participantes, no Pear. Chamadas de voz e vídeo, chat e arquivos, e depois uma transcrição por falante, a ata e insights de fala escritos por IA no próprio dispositivo (QVAC). Sem contas, e nenhum servidor consegue ler uma sala.",
+      "metric": "Sem contas"
     }
   },
   "experience": {
@@ -141,7 +131,7 @@
   },
   "about": {
     "role": "<accent>Engenheiro Backend Sênior</accent> com <strong>8+ anos</strong> construindo sistemas em produção com <ink>Node.js e TypeScript</ink>. Trabalho com fintech e já construí sistemas bancários (carteiras digitais, crédito, Banking-as-a-Service), plataformas de tokenização e backends Web3.",
-    "p2p": "<italic>Meu caminho agora: privacy-first, descentralização, peer-to-peer.</italic> Construo na stack Holepunch/Pear (Hypercore, Hyperdrive, Hyperbee, Autobase), onde os dados ficam nos dispositivos de quem é dono deles. Meu app de entrevistas <accent>retry</accent> roda sem servidor e com IA no próprio dispositivo, e escrevi do zero um transporte confiável sobre UDP puro.",
+    "p2p": "<italic>Meu caminho agora: privacy-first, descentralização, peer-to-peer.</italic> Construo na stack Holepunch/Pear (Pear, Bare, Hypercore, Autobase), onde os dados ficam nos dispositivos de quem é dono deles. Pela <accent>Ciranda</accent> construo o <accent>Capy</accent>, salas de reunião privadas que se replicam direto entre os participantes, com IA no próprio dispositivo para transcrições e atas, e escrevi do zero um transporte confiável sobre UDP puro.",
     "tokenization": "Co-fundei a Zuvia e construí sua plataforma de tokenização: <accent>R$300M+</accent> em volume transacionado, <accent>8.000+ investidores ativos</accent> e a plataforma por trás da primeira tokenização imobiliária do Brasil na infraestrutura da B3. Microsserviços Node.js event-driven sobre PostgreSQL, integrados a contratos Solidity e carteiras multisig.",
     "mindset": "<italic>Mentalidade de dono, mão no código.</italic> Co-fundei duas empresas. Confortável do system design a incidentes em produção e mentoria de time. Tomo as decisões técnicas e escrevo o código que as comprova."
   },
@@ -169,8 +159,7 @@
       "degree": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
       "institution": "Descomplica",
       "location": "São Paulo, Brasil",
-      "period": "Previsão Dez 2026",
-      "note": "Média 9,43/10"
+      "period": "Previsão Dez 2026"
     },
     "english": {
       "degree": "Intensive English Programme",

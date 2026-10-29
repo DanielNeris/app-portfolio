@@ -56,18 +56,18 @@ export const navLinks = [
 
 export const projects: Project[] = [
   {
+    id: 'capy',
+    stack: ['Pear', 'Bare', 'Autobase', 'Hyperswarm', 'QVAC'],
+    href: 'https://capy.ciranda.dev',
+    status: 'beta',
+    year: '2026',
+  },
+  {
     id: 'zuvia',
     stack: ['Node.js', 'PostgreSQL', 'Event-Driven', 'Solidity', 'Next.js'],
     href: 'https://app.zuvia.com.br',
     status: 'live',
     year: '2022 / 2025',
-  },
-  {
-    id: 'retry',
-    stack: ['Pear', 'Hyperdrive', 'Hyperbee', 'Protomux', 'QVAC'],
-    href: 'https://github.com/DanielNeris/retry',
-    status: 'open-source',
-    year: '2026',
   },
   {
     id: 'ecommerce',
@@ -82,20 +82,6 @@ export const projects: Project[] = [
     href: 'https://github.com/DanielNeris/udp-from-scratch',
     status: 'open-source',
     year: '2026',
-  },
-  {
-    id: 'lario',
-    stack: ['Electron', 'AI / DSP', 'TypeScript', 'Audio'],
-    href: 'https://larioai.com',
-    status: 'beta',
-    year: '2025',
-  },
-  {
-    id: 'smoolos',
-    stack: ['Solidity', 'Node.js', 'React', 'Web3'],
-    href: 'https://smoolos-club-dapp.netlify.app',
-    status: 'live',
-    year: '2021 / 2022',
   },
 ]
 
@@ -246,7 +232,7 @@ export const skillGroups: SkillGroup[] = [
 
 export const education: (EducationItem & { hasNote?: boolean })[] = [
   { id: 'computerScience' },
-  { id: 'systems', hasNote: true },
+  { id: 'systems' },
   { id: 'english' },
   { id: 'webDev' },
   { id: 'itTechnician' },
